@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:background="@color/global_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/listview" android:layout_height="fill_parent" android:layout_marginBottom="50.0dip" style="@style/listview_base" />
+    <com.meelive.ingkee.ui.view.main.my.view.UserHomeTitleView android:id="@id/userhome_title_bar" android:background="@color/global_titlebar_background" style="@style/userhome_title_bar" />
+    <include android:id="@id/chat_lahei" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/chat_pushinblacklist" />
+</RelativeLayout>

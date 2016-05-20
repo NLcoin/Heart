@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meelive.ui.widget.SafeImageView android:id="@id/photo_show" android:background="@drawable/bg_cell_playlist" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <TextView android:textSize="@dimen/cell_grid_item_text_size" android:gravity="center" android:id="@id/title" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/cell_grid_item_text_height" android:layout_marginTop="@dimen/cell_grid_item_text_padding_top" android:layout_marginBottom="@dimen/cell_grid_item_text_padding_bottom" android:text="啊" android:singleLine="true" android:includeFontPadding="false" android:lineSpacingExtra="0.0dip" />
+</LinearLayout>

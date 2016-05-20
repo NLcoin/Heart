@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_hall_bg"
+    android:orientation="vertical">
+
+    <com.meelive.ingkee.ui.widget.HallMetroContainer
+        android:id="@id/host_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/global_titlebar_background">
+
+        <com.meelive.ingkee.ui.widget.HallMetroLineTabHost
+            android:id="@id/tab_host"
+            style="@style/hall_metroline_tabhost"
+            android:layout_centerInParent="true"
+            android:background="@color/global_titlebar_background" />
+
+        <ImageView
+            android:id="@id/img_search"
+            android:layout_width="49.0dip"
+            android:layout_height="@dimen/global_header_height"
+            android:contentDescription="@string/app_name"
+            android:paddingBottom="14.5dip"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip"
+            android:paddingTop="14.5dip"
+            android:src="@drawable/search" />
+
+        <ImageButton
+            android:id="@id/ib_chat_enter"
+            android:layout_width="49.0dip"
+            android:layout_height="48.0dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_actionbar_item"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/hallchatenter" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="1.0dip"
+            android:layout_marginTop="1.0dip">
+
+            <com.meelive.ingkee.chat.ui.chat.view.BadgeView
+                android:id="@id/hallunread"
+                android:layout_width="15.0dip"
+                android:layout_height="15.0dip"
+                android:text="@string/sixin_unread"
+                android:textSize="12.0sp" />
+        </FrameLayout>
+    </com.meelive.ingkee.ui.widget.HallMetroContainer>
+
+    <com.meelive.ingkee.ui.widget.DMViewPager
+        android:id="@id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

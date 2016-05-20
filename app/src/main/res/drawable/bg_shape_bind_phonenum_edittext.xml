@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="1.0dip" android:color="@color/bind_phonenum_edittext_bg" />
+    <solid android:color="@color/white" />
+    <corners android:radius="@dimen/corner_default" />
+</shape>

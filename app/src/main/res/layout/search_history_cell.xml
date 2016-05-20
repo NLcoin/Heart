@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/cell_search_history"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/line_marker" style="@style/cell_acco_line_marker" />
+    <TextView android:id="@id/txt_word" android:text="@string/userhome_nickname_default" android:layout_toRightOf="@id/line_marker" android:layout_alignBottom="@id/line_marker" style="@style/cell_acco_name" />
+</RelativeLayout>

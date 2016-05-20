@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/gift_full_yacht_heart_inside_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/colorful_heart" style="@style/gift_full_yacht_heart_img" />
+    <View android:id="@id/colorful_heart_spark" style="@style/gift_full_yacht_heart_img" />
+</RelativeLayout>

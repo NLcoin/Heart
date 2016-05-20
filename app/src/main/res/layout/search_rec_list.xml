@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/container" style="@style/weight_length_vertical">
+        <ListView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/listview_base" />
+    </RelativeLayout>
+    <Button android:textColor="@color/txt_rec_complete" android:layout_gravity="center_horizontal" android:id="@id/btn_change" android:background="@drawable/bg_me_btn" android:layout_width="265.0dip" android:layout_height="@dimen/rec_complete_height" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/userhome_change_rec" />
+</LinearLayout>

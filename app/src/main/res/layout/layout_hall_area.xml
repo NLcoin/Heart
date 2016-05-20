@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:minHeight="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/choice_area_name" android:id="@id/txt_area_name" style="@style/setting_item_lefttext" />
+    <TextView android:textColor="@color/theme_main_2" android:id="@id/txt_live_num" android:layout_toLeftOf="@id/img_area_choice" style="@style/setting_item_lefttext" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_area_choice" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="@dimen/global_left_padding" android:layout_alignParentRight="true" android:layout_centerVertical="true" fresco:fadeDuration="0" fresco:placeholderImage="@drawable/choice_area_icon" fresco:placeholderImageScaleType="fitCenter" fresco:roundAsCircle="true" />
+    <View android:id="@id/view_choice_area_divide" android:background="@color/choice_area_divide" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="@dimen/global_left_padding" android:layout_alignParentBottom="true" />
+</RelativeLayout>

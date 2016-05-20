@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@id/room_usernum_container"
+        android:layout_width="92.0dip"
+        android:layout_height="@dimen/room_usernum_height"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/room_usernum_bg"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/img_room_creator"
+                android:layout_width="34.0dip"
+                android:layout_height="34.0dip"
+                android:layout_marginBottom="@dimen/room_usernum_stroke"
+                android:layout_marginTop="@dimen/room_usernum_stroke"
+                fresco:fadeDuration="0"
+                fresco:placeholderImage="@drawable/default_head"
+                fresco:placeholderImageScaleType="fitCenter"
+                fresco:roundAsCircle="true"
+                fresco:roundingBorderColor="@color/white"
+                fresco:roundingBorderWidth="1.0dip" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/img_user_type"
+                android:layout_width="13.0dip"
+                android:layout_height="13.0dip"
+                android:layout_alignBottom="@id/img_room_creator"
+                android:layout_alignRight="@id/img_room_creator"
+                android:contentDescription="@string/app_name"
+                fresco:fadeDuration="0" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5.0dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@id/txt_roomtype"
+                style="@style/room_users_usernum_text"
+                android:layout_marginTop="3.0dip"
+                android:text="@string/room_live" />
+
+            <TextView
+                android:id="@id/txt_usernum"
+                style="@style/room_users_usernum_text"
+                android:paddingBottom="4.0dip"
+                android:text="0" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@id/listview_users"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/room_usernum_height" />
+</LinearLayout>

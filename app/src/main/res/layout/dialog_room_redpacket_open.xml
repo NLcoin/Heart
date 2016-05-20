@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_room_red_packet_open" android:layout_height="500.0dip" style="@style/redpacket_container"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/redpacket_info_container" android:background="@drawable/bg_room_red_packet_open_head" android:paddingBottom="30.0dip" style="@style/redpacket_info_container">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/user_portrait" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginTop="30.0dip" android:contentDescription="@string/app_name" fresco:fadeDuration="0" fresco:placeholderImage="@drawable/default_head" fresco:placeholderImageScaleType="fitCenter" fresco:roundAsCircle="true" />
+    </LinearLayout>
+    <TextView android:textColor="@color/black" android:id="@id/txt_username" android:text="" style="@style/redpacket_username_text" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/room_red_packet_error_tip" android:id="@id/txt_error_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/room_redpacket_too_slow" />
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/redpacket_received_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="70.0sp" android:textColor="@color/room_red_packet_error_tip" android:id="@id/txt_received" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/charge_value_default" />
+        <ImageView android:layout_marginBottom="16.0dip" android:contentDescription="@string/app_name" style="@style/redpacket_received_gold_icon" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="5.0dip" android:layout_weight="1.0">
+        <com.meelive.ingkee.ui.view.room.view.RoomRedPacketHistoryView android:id="@id/redpacket_history_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/redpacket_history" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/room_red_packet_error_tip" android:id="@id/txt_others" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/room_redpacket_others_luck" />
+            <ImageView android:layout_width="24.0dip" android:layout_height="20.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/redpacket_expand" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout style="@style/redpacket_close_container">
+        <ImageView android:id="@id/img_close" android:contentDescription="@string/app_name" style="@style/redpacket_close_img" />
+    </LinearLayout>
+</LinearLayout>

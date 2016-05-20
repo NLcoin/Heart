@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/room_padding"
+    android:paddingRight="@dimen/room_padding">
+
+    <View style="@style/weight_length_vertical" />
+
+    <LinearLayout
+        android:id="@id/public_chat_container"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/room_publicchat_maxheight"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@id/listview_public_chat"
+            style="@style/listview_base"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="5.0dip"
+            android:listSelector="@drawable/transparent_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/chat_container"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/room_publicchat_height"
+        android:layout_marginBottom="0.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@id/edittext_chat"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/room_chat_height"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_editttext_room_chat"
+            android:inputType="text"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" />
+
+        <Button
+            android:id="@id/btn_send"
+            android:layout_width="66.0dip"
+            android:layout_height="@dimen/room_chat_height"
+            android:layout_marginLeft="5.0dip"
+            android:background="@drawable/bg_btn_room_send"
+            android:text="@string/room_send"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

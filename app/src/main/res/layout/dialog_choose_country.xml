@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/global_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/title_bar" />
+    <com.meelive.ingkee.ui.view.account.cell.ChooseCountryAutoComCell android:id="@id/autotext_places" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/title_bar" />
+    <com.meelive.ingkee.ui.widget.alphabetlistview.AlphabetListView android:id="@id/tsc_aListView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/autotext_places" />
+    <TextView android:textSize="50.0sp" android:textColor="@color/text_choosecountry_overlay" android:gravity="center" android:id="@id/txt_overlay" android:background="@drawable/bg_grey2_btn" android:layout_width="70.0dip" android:layout_height="70.0dip" android:text="@string/layout_user_location_default" android:layout_centerInParent="true" />
+</RelativeLayout>

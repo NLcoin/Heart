@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/ticker"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5.0dip"
+    android:background="@color/global_background">
+
+    <!--<com.meelive.ingkee.ui.widget.DMGallery-->
+        <!--android:id="@id/gallery"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="200.0dip"-->
+        <!--android:background="@drawable/room_moren" />-->
+
+    <RelativeLayout
+        android:id="@id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="20.0dip">
+        <!--android:layout_alignBottom="@id/gallery">-->
+
+        <!--<com.meelive.ingkee.ui.widget.DMSlidingIndicator-->
+            <!--android:id="@id/gallery_indicator"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="6.0dip"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--duomi:indicator_drawable="@drawable/indicator_search_guide"-->
+            <!--duomi:indicator_margin="3.0dip" />-->
+    </RelativeLayout>
+</RelativeLayout>

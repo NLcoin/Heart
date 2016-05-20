@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/global_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_bar" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="vertical" android:id="@id/points_container" android:background="@drawable/me_harvest_below" android:padding="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/global_line_height">
+                <ImageView android:id="@id/img_point_icon" android:layout_width="18.0sp" android:layout_height="20.0sp" android:src="@drawable/me_harvest_yingpiao" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/txt_point_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/charge_ingkee_point" android:layout_toRightOf="@id/img_point_icon" />
+                <TextView android:textSize="50.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/txt_points" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/charge_value_default" android:layout_below="@id/img_point_icon" />
+            </RelativeLayout>
+            <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip" android:stretchColumns="0,1">
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:text="@string/charge_withdraw_all" style="@style/text_withdraw_cash_tip" />
+                    <TextView android:text="@string/charge_withdraw_today" style="@style/text_withdraw_cash_tip" />
+                </TableRow>
+                <TableRow android:paddingTop="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@id/txt_widthdraw_all" android:text="@string/charge_value_default" style="@style/text_withdraw_cash" />
+                    <TextView android:id="@id/txt_widthdraw_today" android:text="@string/charge_value_default" style="@style/text_withdraw_cash" />
+                </TableRow>
+            </TableLayout>
+            <View android:layout_marginBottom="30.0dip" style="@style/mygain_line" />
+            <RelativeLayout android:id="@id/btn_charge" style="@style/mygain_withdraw_btn_container">
+                <TextView android:id="@id/txt_charge" android:text="@string/charge_exchange" style="@style/text_mygain_withdraw_charge" />
+                <ImageView android:id="@id/img_charge_icon" android:layout_marginLeft="3.0dip" android:layout_toRightOf="@id/txt_charge" android:contentDescription="@string/app_name" style="@style/img_mygain_withdraw_charge" />
+            </RelativeLayout>
+            <Button android:id="@id/btn_withdraw_cash" android:text="@string/charge_withdraw_cash" style="@style/mygain_withdraw_cash_btn" />
+            <LinearLayout android:id="@id/btn_common_problems" android:layout_marginTop="10.0dip" style="@style/declare_container">
+                <TextView android:text="@string/charge_common_problems" style="@style/declare_text" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/global_background" style="@style/cell_search_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/cell_search_editcontainer">
+        <ImageButton android:id="@id/btn" android:contentDescription="@string/app_name" style="@style/cell_search_searchicon" />
+        <com.meelive.ingkee.ui.widget.DMEditText android:id="@id/edit" android:hint="@string/login_input_place" android:layout_toLeftOf="@id/del" android:layout_toRightOf="@id/btn" style="@style/cell_search_edittext" />
+        <ImageView android:id="@id/del" android:contentDescription="@string/app_name" style="@style/cell_search_btn_del" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/actionbar_title_color" android:gravity="center" android:id="@id/refresh_text" android:paddingLeft="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pull_refresh_down" android:shadowColor="@color/white" android:shadowDy="1.0" android:shadowRadius="0.5" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <ProgressBar android:id="@id/refresh_loading" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:indeterminateDrawable="@drawable/icn_loading_indicator_2" android:indeterminateDuration="700" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@android:style/Widget.ProgressBar.Large.Inverse" />
+    <ImageView android:id="@id/refresh_icon" android:layout_width="39.0dip" android:layout_height="39.0dip" android:scaleType="fitXY" android:layout_centerInParent="true" android:contentDescription="@null" />
+    <View android:id="@id/refresh_divider" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginTop="5.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

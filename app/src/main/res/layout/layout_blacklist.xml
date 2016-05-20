@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/user_portrait" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" fresco:fadeDuration="0" fresco:placeholderImage="@drawable/default_head" fresco:placeholderImageScaleType="fitCenter" fresco:roundAsCircle="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_user_type" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_alignRight="@id/user_portrait" android:layout_alignBottom="@id/user_portrait" fresco:fadeDuration="0" />
+        <RelativeLayout android:id="@id/infor_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/user_portrait" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/name_gender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <TextView android:id="@id/txt_username" android:text="@string/userhome_nickname_default" style="@style/cell_useritem_username" />
+                <ImageView android:id="@id/img_gender" android:contentDescription="@string/app_name" style="@style/cell_useritem_gender_img" />
+                <ImageView android:id="@id/img_level" android:contentDescription="@string/app_name" style="@style/cell_useritem_level_img" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/chat_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_below="@id/name_gender">
+                <TextView android:textColor="#ffc8c8c8" android:id="@id/black_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <TextView android:id="@id/txt_tip" android:layout_marginTop="0.0dip" android:text="@string/app_name" android:layout_below="@id/name_gender" android:layout_alignLeft="@id/name_gender" style="@style/cell_useritem_giftvalue" />
+        </RelativeLayout>
+        <ImageView android:background="@drawable/blacklist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

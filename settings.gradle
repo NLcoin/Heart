@@ -1,0 +1,4 @@
+include ':app'
+include ':base'
+include ':social_sdk_library_project'
+project(':base').projectDir = new File('../tianxiao/tianxiao-base-android/base')

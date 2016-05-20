@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/transparent_color" />
+        </shape>
+    </item>
+    <item android:top="@dimen/chat_inputbar_edittext_paddingtop" android:bottom="@dimen/chat_inputbar_edittext_paddingbottom">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/chat_inputbar_edittext_bg" />
+            <stroke android:width="1.0dip" android:color="@color/chat_inputbar_edittext_border" />
+            <corners android:radius="5.0dip" />
+        </shape>
+    </item>
+</layer-list>

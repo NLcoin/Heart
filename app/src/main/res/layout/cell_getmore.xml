@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/global_cell">
+
+    <TextView
+        android:id="@id/title"
+        style="@style/global_cell_title"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/global_more"
+        android:textColor="@color/loading_tip" />
+
+    <LinearLayout
+        android:id="@id/loading_llay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_gravity="center_vertical"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/icn_loading_indicator"
+            android:indeterminateDuration="2000"
+            android:indeterminateOnly="true" />
+
+        <TextView
+            android:id="@id/subtitle"
+            style="@style/global_cell_title"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingLeft="@dimen/cell_layout_padding"
+            android:paddingRight="@dimen/cell_layout_padding"
+            android:text="@string/loading_text"
+            android:textColor="@color/loading_tip" />
+    </LinearLayout>
+</RelativeLayout>

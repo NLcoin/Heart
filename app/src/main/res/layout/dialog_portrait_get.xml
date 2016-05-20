@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/oper_dialog_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" style="@style/text_chooseimg_item_container">
+        <TextView android:id="@id/txt_photoalbum" android:text="@string/userhome_photoalbum" style="@style/text_chooseimg_dialog" />
+        <View style="@style/line_dialog" />
+        <TextView android:id="@id/txt_take_photo" android:text="@string/login_take_photo" style="@style/text_chooseimg_dialog" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" style="@style/chooseimg_item_cancel_container">
+        <TextView android:id="@id/txt_cancel" android:text="@string/global_cancel" style="@style/text_chooseimg_dialog" />
+    </LinearLayout>
+</LinearLayout>

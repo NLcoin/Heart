@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/tipdialog_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/bg_tipdialog_top" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <TextView android:id="@id/txt_title" android:text="@string/global_tip" style="@style/tipdialog_title" />
+    <View style="@style/line_tip_dialog" />
+    <TextView android:id="@id/txt_content" android:text="@string/app_name" style="@style/tipdialog_content" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="15.0dip" style="@style/tipdialog_btns_container">
+        <Button android:textColor="@color/text_tipdialog_cancel" android:id="@id/btn_cancel" android:background="@drawable/bg_btn_dialog_cancel" android:layout_marginRight="15.0dip" android:text="@string/global_cancel" style="@style/tipdialog_btn" />
+        <Button android:textColor="@color/white" android:id="@id/btn_confirm" android:background="@drawable/bg_btn_save_portrait" android:layout_marginLeft="15.0dip" android:text="@string/confirm" style="@style/tipdialog_btn" />
+    </LinearLayout>
+</LinearLayout>

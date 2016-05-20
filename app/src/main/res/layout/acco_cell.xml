@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/cell_acco"
+    android:gravity="center_vertical">
+
+    <View
+        android:id="@id/line_marker"
+        style="@style/cell_acco_line_marker" />
+
+    <TextView
+        android:id="@id/txt_acco_name"
+        style="@style/cell_acco_name"
+        android:layout_alignBottom="@id/line_marker"
+        android:layout_toRightOf="@id/line_marker"
+        android:text="@string/userhome_nickname_default" />
+
+    <TextView
+        android:id="@id/txt_acco_singername"
+        style="@style/cell_acco_singer_name"
+        android:layout_alignLeft="@id/txt_acco_name"
+        android:layout_below="@id/txt_acco_name"
+        android:text="@string/userhome_nickname_default" />
+
+    <TextView
+        android:id="@id/txt_acco_err"
+        style="@style/cell_acco_singer_name"
+        android:layout_alignBaseline="@id/txt_acco_singername"
+        android:layout_toRightOf="@id/txt_acco_name"
+        android:textColor="@color/dm_red" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@id/txt_acco_duration"
+            style="@style/cell_acco_length"
+            android:layout_marginRight="10.0dip"
+            android:text="@string/global_deault_duration" />
+
+        <TextView
+            android:id="@id/txt_download"
+            style="@style/cell_acco_download"
+            android:text="@string/acco_download"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@id/download_progress_container"
+            style="@style/cell_acco_download_params"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:gravity="center">
+
+            <com.meelive.ingkee.ui.widget.AccoDownloadView
+                android:id="@id/progress_view"
+                style="@style/cell_acco_download_params" />
+
+            <TextView
+                android:id="@id/txt_download_progress"
+                style="@style/cell_acco_download_progress"
+                android:text="0%" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

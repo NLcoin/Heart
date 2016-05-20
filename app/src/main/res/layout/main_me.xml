@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/global_background"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@id/main_me_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.meelive.ingkee.ui.view.user.UserHomeHeadView
+            android:id="@id/user_head"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            style="@style/setting_group_container"
+            android:layout_marginTop="10.0dip"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@id/btn_my_gain"
+                style="@style/setting_item_container">
+
+                <ImageView
+                    android:id="@id/img_my_gain_icon"
+                    style="@style/userhome_setting_item_lefticon"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/me_under_harvest" />
+
+                <TextView
+                    style="@style/userhome_setting_item_lefttext"
+                    android:layout_toRightOf="@id/img_my_gain_icon"
+                    android:text="@string/userhome_my_gain_item" />
+
+                <ImageView
+                    android:id="@id/img_right_arrow"
+                    style="@style/global_home_cell_rightimage"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@id/txt_my_gain"
+                    style="@style/setting_item_righttext"
+                    android:text="0" />
+            </RelativeLayout>
+
+            <View style="@style/line_black_setting" />
+
+            <RelativeLayout
+                android:id="@id/btn_my_level"
+                style="@style/setting_item_container">
+
+                <ImageView
+                    android:id="@id/img_my_level_icon"
+                    style="@style/userhome_setting_item_lefticon"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/me_under_grade" />
+
+                <TextView
+                    style="@style/userhome_setting_item_lefttext"
+                    android:layout_toRightOf="@id/img_my_level_icon"
+                    android:text="@string/userhome_my_level" />
+
+                <ImageView
+                    style="@style/global_home_cell_rightimage"
+                    android:contentDescription="@string/app_name" />
+
+                <ImageView
+                    android:id="@id/img_my_level"
+                    style="@style/userhome_setting_item_levelicon"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/rank_1" />
+            </RelativeLayout>
+
+            <View style="@style/line_black_setting" />
+
+            <RelativeLayout
+                android:id="@id/btn_my_account"
+                style="@style/setting_item_container">
+
+                <ImageView
+                    android:id="@id/img_my_account_icon"
+                    style="@style/userhome_setting_item_lefticon"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/me_under_myaccount" />
+
+                <TextView
+                    style="@style/userhome_setting_item_lefttext"
+                    android:layout_toRightOf="@id/img_my_account_icon"
+                    android:text="@string/userhome_my_account" />
+
+                <ImageView
+                    android:id="@id/img_right_arrow"
+                    style="@style/global_home_cell_rightimage"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@id/txt_my_account"
+                    style="@style/setting_item_righttext"
+                    android:text="0" />
+            </RelativeLayout>
+
+            <View style="@style/line_black_setting" />
+
+            <RelativeLayout
+                android:id="@id/btn_my_invite"
+                style="@style/setting_item_container"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@id/img_my_invite_icon"
+                    style="@style/userhome_setting_item_lefticon"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/me_under_myaccount" />
+
+                <TextView
+                    android:id="@id/text_my_invite"
+                    style="@style/userhome_setting_item_lefttext"
+                    android:layout_toRightOf="@id/img_my_invite_icon"
+                    android:text="@string/userhome_my_invite" />
+
+                <ImageView
+                    style="@style/global_home_cell_rightimage"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@id/btn_no_disturb"
+            style="@style/userhome_setting_item_container_single">
+
+            <ImageView
+                android:id="@id/img_no_disturb_icon"
+                style="@style/userhome_setting_item_lefticon"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/me_under_nodisturbing" />
+
+            <TextView
+                style="@style/userhome_setting_item_lefttext"
+                android:layout_toRightOf="@id/img_no_disturb_icon"
+                android:text="@string/userhome_nodisturb" />
+
+            <ImageView
+                android:id="@id/img_right_arrow"
+                style="@style/global_home_cell_rightimage"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@id/btn_logout"
+            style="@style/btn_logout" />
+    </LinearLayout>
+</ScrollView>

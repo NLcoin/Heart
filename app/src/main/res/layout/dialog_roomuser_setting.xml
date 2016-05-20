@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/room_manager_dialog" android:background="@color/live_finish_bg" android:layout_height="fill_parent" style="@style/oper_dialog_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/txt_setmanage" android:text="@string/room_roomuser_setmanage" style="@style/live_finish_follow_btn" />
+    <TextView android:gravity="center" android:id="@id/txt_managelist" android:text="@string/room_roomuser_managelist" style="@style/live_finish_follow_btn" />
+    <TextView android:gravity="center" android:id="@id/txt_reportorfbchat" android:text="@string/room_roomuser_forbidchat" style="@style/live_finish_follow_btn" />
+    <TextView android:gravity="center" android:id="@id/txt_cancel" android:layout_marginBottom="20.0dip" android:text="@string/global_cancel" style="@style/live_finish_follow_btn" />
+</LinearLayout>

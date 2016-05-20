@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/global_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_bar" />
+    <ScrollView android:fillViewport="true" style="@style/register_validate_container">
+        <RelativeLayout style="@style/feedback_text_container">
+            <EditText android:id="@id/edit" android:text="" android:hint="" android:singleLine="false" style="@style/feedback_edittext" />
+            <TextView android:id="@id/txt_leftcount" android:text="" android:layout_alignRight="@id/edit" android:layout_alignBottom="@id/edit" style="@style/input_textcount" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/global_desc_font" android:id="@id/txt_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/setting_cell_verticalmargin" android:layout_marginRight="10.0dip" android:text="" android:layout_below="@id/edit" />
+            <ImageView android:id="@id/del" android:padding="8.0dip" android:contentDescription="@string/app_name" style="@style/cell_search_btn_del" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

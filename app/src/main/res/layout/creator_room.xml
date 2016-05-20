@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/room_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <View
+        android:id="@id/click_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.meelive.ingkee.ui.view.room.view.RoomUsersView
+        android:id="@id/users_container"
+        style="@style/room_users_container" />
+
+    <com.meelive.ingkee.ui.view.room.view.CreatorRoomGoldCountView
+        android:id="@id/gold_count_container"
+        style="@style/room_gold_count_container"
+        android:layout_below="@id/users_container"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@id/public_chat_container"
+        style="@style/room_public_chat_container"
+        android:layout_above="@id/oper_container">
+
+        <ListView
+            android:id="@id/listview_public_chat"
+            style="@style/room_public_chat_listview" />
+    </LinearLayout>
+
+    <com.meelive.ingkee.ui.view.room.view.RoomContinueGiftContainerView
+        android:id="@id/continue_gift_container"
+        style="@style/room_continue_gift_cotnainer"
+        android:layout_above="@id/oper_container" />
+
+    <com.meelive.ingkee.ui.view.room.view.CreatorRoomLyricView
+        android:id="@id/lyric_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/public_chat_container" />
+
+    <com.meelive.ingkee.ui.view.room.view.CreatorRoomOperView
+        android:id="@id/oper_container"
+        style="@style/room_oper_container" />
+
+    <com.meelive.ingkee.ui.view.room.RoomHeartView
+        android:id="@id/heart_view"
+        style="@style/room_heart" />
+
+    <com.meelive.ingkee.ui.view.room.view.RoomChatView
+        android:id="@id/chat_container"
+        style="@style/room_chat_container" />
+
+    <TextView
+        android:id="@id/txt_live_tip"
+        style="@style/room_tip_text" />
+
+    <RelativeLayout
+        android:id="@id/finish_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.meelive.ingkee.ui.widget.GifAnimationView
+        android:id="@id/gif_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <include
+        layout="@layout/room_full_screen_gift"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</RelativeLayout>

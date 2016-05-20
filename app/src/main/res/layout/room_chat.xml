@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/room_chat_container_base"
+        android:layout_marginBottom="6dip">
+
+        <EditText
+            android:id="@id/edittext_chat"
+            style="@style/room_chat_edittext" />
+
+        <Button
+            android:id="@id/btn_send"
+            style="@style/room_send_btn" />
+    </LinearLayout>
+</LinearLayout>

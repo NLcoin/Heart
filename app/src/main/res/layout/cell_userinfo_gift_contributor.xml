@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/cell_useritem_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/contributor_info_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/img_follow" android:layout_centerVertical="true" layout="@layout/cell_contributor_infor" />
+    <ImageView android:id="@id/img_follow" android:src="@drawable/me_follow" android:contentDescription="@string/app_name" style="@style/cell_useritem_imgfollow" />
+</RelativeLayout>

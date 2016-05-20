@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@id/loading_nocontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@id/img_nocontent"
+            style="@style/live_record_error_img"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/mr_001" />
+
+        <TextView
+            android:id="@id/txt_nocontent"
+            style="@style/live_record_error_text"
+            android:layout_below="@id/img_nocontent"
+            android:text="@string/network_no_avaliable_fresh" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@id/img_close"
+        style="@style/room_bottom_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/bg_btn_room_close" />
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="6dip"
+    android:paddingLeft="6dip"
+    android:paddingRight="6dip">
+
+    <ImageView
+        android:id="@+id/img_chat"
+        style="@style/room_bottom_icon"
+        android:layout_marginTop="@dimen/room_user_padding"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/bg_btn_room_chat"
+        />
+
+    <ImageView
+        android:id="@+id/img_pause_play"
+        style="@style/room_bottom_icon"
+        android:layout_marginTop="@dimen/room_user_padding"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/room_btn_zanting"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txt_play_time"
+        style="@style/live_record_play_time_txt"
+        android:visibility="gone" />
+
+    <View
+        style="@style/weight_length_horizontal"
+        android:layout_height="0.0dip"
+        />
+    <ImageView
+        android:id="@+id/img_music"
+        style="@style/room_bottom_icon"
+        android:layout_marginRight="@dimen/room_icon_chat_spacing"
+        android:layout_marginTop="@dimen/room_user_padding"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/bg_btn_room_private_chat"
+        />
+
+    <!--<com.meelive.ingkee.ui.view.room.view.RoomPrivateChatImgView style="@style/room_privatechat_icon" />-->
+
+    <ImageView
+        android:id="@+id/img_shareroom"
+        style="@style/room_bottom_icon"
+        android:layout_marginRight="@dimen/room_icon_chat_spacing"
+        android:layout_marginTop="@dimen/room_user_padding"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/bg_btn_room_share" />
+
+    <ImageView
+        android:id="@+id/img_like"
+        style="@style/room_bottom_icon"
+        android:layout_marginRight="@dimen/room_icon_chat_spacing"
+        android:layout_marginTop="@dimen/room_user_padding"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/bg_btn_room_gift" />
+
+    <ImageView
+        android:id="@+id/img_shutdown"
+        style="@style/room_bottom_icon"
+        android:layout_marginTop="@dimen/room_user_padding"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/bg_btn_room_close" />
+</LinearLayout>

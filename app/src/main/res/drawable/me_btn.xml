@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="2.0dip" android:color="@color/global_titlebar_background" />
+    <solid android:color="@color/transparent_color" />
+    <corners android:radius="@dimen/rec_complete_height" />
+</shape>

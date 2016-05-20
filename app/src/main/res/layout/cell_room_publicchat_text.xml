@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/room_publicchat_container">
+
+
+    <TextView
+        android:id="@+id/txt_chat_content"
+        style="@style/room_publicchat_text"
+        android:lineSpacingExtra="8dip"
+        tools:text="但是发生地方时代" />
+
+
+
+</LinearLayout>

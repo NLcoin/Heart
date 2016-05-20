@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_loading_bg" android:contentDescription="@string/app_name" style="@style/loading_img_bg" />
+    <ImageView android:id="@id/img_marquee1" android:contentDescription="@string/app_name" style="@style/room_loading_img" />
+    <ImageView android:id="@id/img_marquee2" android:contentDescription="@string/app_name" style="@style/room_loading_img" />
+    <ImageView android:id="@id/loading_camera" android:contentDescription="@string/app_name" style="@style/loading_img" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/txt_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/room_live_loading" android:layout_below="@id/loading_camera" android:layout_centerHorizontal="true" />
+</RelativeLayout>

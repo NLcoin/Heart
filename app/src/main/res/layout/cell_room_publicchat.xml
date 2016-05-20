@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/room_publicchat_container">
+
+    <ImageView
+        android:id="@+id/txt_chat_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingTop="2dip"
+        android:src="@drawable/rank_1" />
+
+    <TextView
+        android:id="@+id/txt_chat_name"
+        style="@style/room_publicchat_text"
+        tools:text="但是发生地方时代" />
+
+    <TextView
+        android:id="@+id/txt_chat_content"
+        style="@style/room_publicchat_text"
+        android:textColor="@color/cell_public_chat_content"
+        tools:text="我点亮了" />
+
+    <tyrantgit.widget.HeartView
+        android:id="@+id/txt_chat_heart"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingTop="2dip" />
+
+</LinearLayout>

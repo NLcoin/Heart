@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/hall_title_text_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/txt_title" style="@style/hall_title_text_title_in_dialog" />
+    <ImageView android:id="@id/img_new" android:layout_toRightOf="@id/txt_title" android:contentDescription="@string/app_name" style="@style/hall_title_text_imgnew" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="left" style="@style/chat_item_text_container"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/txt_time" style="@style/chat_msg_time_item_text" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_user_portrait" android:layout_width="@dimen/live_item_user_head_width" android:layout_height="@dimen/live_item_user_head_width" android:layout_marginTop="@dimen/chat_item_portrait_margintop" android:layout_below="@id/txt_time" fresco:fadeDuration="0" fresco:placeholderImage="@drawable/default_head" fresco:placeholderImageScaleType="fitCenter" fresco:roundAsCircle="true" fresco:roundingBorderWidth="@dimen/user_head_bg_stroke_width" fresco:roundingBorderColor="@color/global_titlebar_background" />
+    <TextView android:textColor="@color/chat_item_system_text" android:gravity="center_vertical" android:id="@id/txt_chat_content" android:layout_toRightOf="@id/img_user_portrait" android:layout_below="@id/txt_time" style="@style/chat_item_text_txt_left" />
+</RelativeLayout>

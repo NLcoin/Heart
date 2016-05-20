@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/chat_input"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@id/chat_inputbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/chat_inputbar_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="4.0dip">
+
+        <ImageView
+            android:id="@id/img_audio_text"
+            style="@style/chat_inputbar_audio_icon"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_duijiang"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            style="@style/weight_length_horizontal"
+            android:layout_height="@dimen/chat_inputbar_edittext_height">
+
+            <EditText
+                android:id="@id/edit_chat"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/chat_inputbar_edittext_height"
+                android:background="@drawable/bg_chat_inputbar_edittext"
+                android:hint=""
+                android:maxLines="6"
+                android:minHeight="@dimen/chat_inputbar_edittext_height"
+                android:paddingBottom="@dimen/chat_inputbar_edittext_paddingbottom"
+                android:paddingLeft="5.0dip"
+                android:paddingTop="@dimen/chat_inputbar_edittext_paddingtop"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@id/btn_say"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/chat_inputbar_edittext_height"
+                android:layout_marginBottom="@dimen/chat_inputbar_saybtn_margintop"
+                android:layout_marginTop="@dimen/chat_inputbar_saybtn_margintop"
+                android:background="@drawable/bg_btn_chat_say"
+                android:gravity="center"
+                android:text="@string/chat_say"
+                android:textColor="@color/chat_say_btn"
+                android:textSize="16.0sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@id/img_emoji"
+            style="@style/chat_inputbar_emoji_icon"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/chat_inputbar_emoji" />
+
+        <RelativeLayout
+            android:layout_width="45.0dip"
+            android:layout_height="@dimen/chat_inputbar_inputbtn_height"
+            android:gravity="center"
+            android:paddingLeft="3.0dip">
+
+            <ImageView
+                android:id="@id/img_more"
+                style="@style/chat_inputbar_emoji_icon"
+                android:layout_marginBottom="2.5dip"
+                android:layout_marginLeft="0.0dip"
+                android:layout_marginTop="2.5dip"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/chat_inputbar_more" />
+
+            <Button
+                android:id="@id/btn_send"
+                style="@style/chat_inputbar_send_btn"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@id/chat_more_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/titlebar_container">
+        <ImageButton android:id="@id/back" android:layout_centerVertical="true" android:contentDescription="@string/app_name" style="@style/titlebar_back" />
+        <TextView android:id="@id/title" android:text="@string/title" style="@style/titlebar_title" />
+        <ImageView android:id="@id/img_search" android:src="@drawable/global_search" android:contentDescription="@string/app_name" style="@style/titlebar_img_right" />
+    </RelativeLayout>
+    <com.meelive.ingkee.ui.widget.MetroLineTabHost android:gravity="center" android:orientation="horizontal" android:id="@id/tab_host" android:layout_width="wrap_content" android:layout_height="48.0dip" />
+    <include layout="@layout/list_divider" />
+    <com.meelive.ingkee.ui.widget.DMViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

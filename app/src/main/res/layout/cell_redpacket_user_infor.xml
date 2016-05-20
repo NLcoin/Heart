@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/user_portrait" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerVertical="true" fresco:fadeDuration="0" fresco:placeholderImage="@drawable/default_head" fresco:placeholderImageScaleType="fitCenter" fresco:roundAsCircle="true" />
+    <RelativeLayout android:id="@id/infor_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/user_portrait" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/name_gender" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+            <TextView android:id="@id/txt_username" android:text="@string/userhome_nickname_default" style="@style/cell_redpacket_useritem_username" />
+            <ImageView android:id="@id/img_gender" android:contentDescription="@string/app_name" style="@style/cell_useritem_gender_img" />
+        </LinearLayout>
+        <TextView android:id="@id/txt_tip" android:layout_marginTop="0.0dip" android:text="@string/app_name" android:layout_below="@id/name_gender" android:layout_alignLeft="@id/name_gender" style="@style/cell_useritem_giftvalue" />
+    </RelativeLayout>
+</RelativeLayout>

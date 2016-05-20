@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/global_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_bar" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_safe_icon" android:layout_width="30.0dip" android:layout_height="35.0dip" android:layout_marginTop="45.0dip" android:src="@drawable/account_safe_guard_dark" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+    <TextView android:textSize="@dimen/bind_phonenum_edittext_textsize" android:textColor="@color/account_safe_level" android:gravity="center" android:id="@id/txt_safe_level" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/account_safe_level_low" />
+    <ImageView android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:src="@drawable/account_safe_star" android:contentDescription="@string/app_name" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/account_safe_tip" android:gravity="center" android:id="@id/txt_account_safe_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/account_safe_tip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_marginTop="18.0dip" style="@style/setting_group_container">
+            <View style="@style/line_black_setting_full" />
+            <RelativeLayout android:id="@id/phonenum_bind" style="@style/setting_item_container">
+                <ImageView android:layout_width="13.0dip" android:layout_height="22.0dip" android:layout_marginLeft="15.0dip" android:src="@drawable/account_safe_icon_phone" android:scaleType="fitXY" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+                <TextView android:paddingLeft="0.0dip" android:layout_marginLeft="40.0dip" android:text="@string/account_safe_phonenum_bind" style="@style/setting_item_lefttext" />
+                <ImageView android:id="@id/img_right_phonenum_bind" android:src="@drawable/me_next_grey" android:contentDescription="@string/app_name" style="@style/global_home_cell_rightimage" />
+                <TextView android:textColor="@color/account_safe_unbind" android:id="@id/txt_phonenum" android:text="@string/account_safe_phonenum_unbind" style="@style/setting_item_righttext" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View style="@style/line_black_setting_full" />
+    </LinearLayout>
+</LinearLayout>

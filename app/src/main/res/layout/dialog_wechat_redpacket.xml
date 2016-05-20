@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/redpacket_container"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/redpacket_info_container" android:background="@drawable/bg_room_red_packet_head" android:paddingBottom="80.0dip" style="@style/redpacket_info_container">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/user_portrait" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginTop="30.0dip" fresco:fadeDuration="0" fresco:placeholderImage="@drawable/default_head" fresco:placeholderImageScaleType="fitCenter" fresco:roundAsCircle="true" />
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/txt_username" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_marginTop="6.0dip" android:text="@string/app_name" style="@style/redpacket_tip_text" />
+        <TextView android:textColor="@color/room_red_packet_tip" android:id="@id/txt_redpacket_tip" android:layout_marginTop="3.0dip" android:text="@string/room_redpacket_tip" style="@style/redpacket_tip_text" />
+        <TextView android:textSize="30.0sp" android:textColor="@color/wechat_redpacket_title" android:id="@id/txt_redpacket_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/global_wechat_redpacket_default" />
+        <TextView android:textColor="@color/room_red_packet_tip" android:id="@id/txt_redpacket_gettip" android:layout_marginTop="6.0dip" android:text="@string/global_wechat_redpacket_gettip" style="@style/redpacket_tip_text" />
+        <ImageView android:id="@id/img_redpacket_gettip" android:layout_width="15.0dip" android:layout_height="8.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/redpacket_triangle_down" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <ImageView android:id="@id/img_open" android:src="@drawable/redpacket_get" android:layout_below="@id/redpacket_info_container" android:contentDescription="@string/app_name" style="@style/redpacket_img_open" />
+    <LinearLayout style="@style/redpacket_close_container">
+        <ImageView android:id="@id/img_close" android:visibility="gone" android:contentDescription="@string/app_name" style="@style/redpacket_close_img" />
+    </LinearLayout>
+</RelativeLayout>

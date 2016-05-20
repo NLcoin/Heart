@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/global_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/titlebar" style="@style/titlebar_container">
+        <ImageButton android:id="@id/back" android:layout_centerVertical="true" android:contentDescription="@string/app_name" style="@style/titlebar_back" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:id="@id/title" android:text="@string/charge_withdraw_cash_confirm" style="@style/titlebar_title" />
+            <TextView android:textSize="16.0sp" android:text="@string/charge_withdraw_cash_to_wechat" style="@style/titlebar_title" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:gravity="center|top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/setting_cell_verticalmargin">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/user_portrait" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="false" fresco:fadeDuration="0" fresco:placeholderImage="@drawable/default_head" fresco:placeholderImageScaleType="fitCenter" fresco:roundAsCircle="true" fresco:roundingBorderWidth="1.0dip" fresco:roundingBorderColor="@color/head_stroke_bg" />
+            </RelativeLayout>
+            <TextView android:textSize="16.0sp" android:id="@id/txt_username" android:layout_marginTop="5.0dip" android:text="@string/charge_withdraw_cash_to_account" style="@style/declare_text" />
+            <View style="@style/line_setting_item_top" />
+            <LinearLayout android:orientation="vertical" style="@style/setting_group_container">
+                <RelativeLayout style="@style/setting_item_container">
+                    <TextView android:id="@id/txt_balance_tip" android:text="@string/charge_withdraw_cash_count" style="@style/setting_item_lefttext" />
+                    <TextView android:id="@id/txt_money" android:layout_marginLeft="3.0dip" android:layout_toRightOf="@id/txt_balance_tip" android:layout_centerVertical="true" style="@style/text_charinfor_balance" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View style="@style/line_setting_item_bottom" />
+            <Button android:id="@id/btn_ok" android:layout_marginTop="50.0dip" android:text="@string/charge_withdraw_cash_confirm" style="@style/btn_charge_ok" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

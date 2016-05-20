@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/include_blacklist" layout="@layout/title_bar" />
+    <ListView android:id="@id/blacklist_listview" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/include_blacklist" />
+    <ProgressBar android:id="@id/progress_loading" android:layout_centerInParent="true" style="@style/loading_progressbar" />
+    <ImageView android:id="@id/null_blacklist" android:background="@drawable/null_blacklist" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@string/app_name" />
+    <TextView android:textColor="#ffdcdcdc" android:id="@id/null_text" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/null_blacklist" android:layout_below="@id/null_blacklist" android:layout_centerInParent="true" />
+</RelativeLayout>

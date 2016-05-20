@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/room_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <SurfaceView
+        android:id="@id/surfaceview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <RelativeLayout
+        android:id="@id/room_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@id/img_loading_bg"
+            style="@style/loading_img_bg"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@id/loading_camera"
+            style="@style/loading_img"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <View
+        android:id="@id/click_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.meelive.ingkee.ui.view.room.view.LiveRecordUsersView
+        android:id="@id/users_container"
+        style="@style/room_users_container" />
+
+    <com.meelive.ingkee.ui.view.room.view.LiveRecordRoomGoldCountView
+        android:id="@id/gold_count_container"
+        style="@style/room_gold_count_container"
+        android:layout_below="@id/users_container"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@id/public_chat_container"
+        style="@style/room_public_chat_container"
+        android:layout_above="@id/player_seekbar">
+
+        <ListView
+            android:id="@id/listview_public_chat"
+            style="@style/room_public_chat_listview" />
+    </LinearLayout>
+
+    <com.meelive.ingkee.ui.view.room.view.RoomContinueGiftContainerView
+        android:id="@id/continue_gift_container"
+        style="@style/room_continue_gift_cotnainer"
+        android:layout_above="@id/oper_container" />
+
+    <SeekBar
+        android:id="@id/player_seekbar"
+        style="@style/live_record_player_seekbar"
+        android:layout_above="@id/oper_container" />
+
+    <com.meelive.ingkee.ui.view.room.view.LiveRecordOperView
+        android:id="@id/oper_container"
+        style="@style/room_oper_container" />
+
+    <com.meelive.ingkee.ui.view.room.RoomHeartView
+        android:id="@id/heart_view"
+        style="@style/room_heart" />
+
+    <TextView
+        android:id="@id/txt_live_tip"
+        style="@style/room_tip_text" />
+
+    <RelativeLayout
+        android:id="@id/finish_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.meelive.ingkee.ui.widget.GifAnimationView
+        android:id="@id/gif_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <include
+        layout="@layout/room_full_screen_gift"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</RelativeLayout>

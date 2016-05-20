@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    style="@style/chat_item_text_container"
+    android:gravity="left"
+    android:paddingRight="@dimen/chat_item_text_container_min_space">
+
+    <TextView
+        android:id="@id/txt_time"
+        style="@style/chat_msg_time_item_text" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@id/img_user_portrait"
+        android:layout_width="@dimen/live_item_user_head_width"
+        android:layout_height="@dimen/live_item_user_head_width"
+        android:layout_below="@id/txt_time"
+        android:layout_marginTop="@dimen/chat_item_portrait_margintop"
+        fresco:fadeDuration="0"
+        fresco:placeholderImage="@drawable/default_head"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:roundAsCircle="true"
+        fresco:roundingBorderColor="@color/global_titlebar_background"
+        fresco:roundingBorderWidth="@dimen/user_head_bg_stroke_width" />
+
+    <TextView
+        android:id="@id/txt_chat_content"
+        style="@style/chat_item_text_txt"
+        android:layout_below="@id/txt_time"
+        android:layout_marginLeft="@dimen/chat_item_content_to_portrait"
+        android:layout_toRightOf="@id/img_user_portrait"
+        android:background="@drawable/chat_item_text_bg_left"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/chat_item_text_paddingleft"
+        android:paddingRight="@dimen/chat_item_text_paddingright" />
+</RelativeLayout>

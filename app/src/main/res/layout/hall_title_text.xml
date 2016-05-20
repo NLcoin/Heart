@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/hall_title_text_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/title_container" android:layout_centerInParent="true" style="@style/hall_title_text_title_container">
+        <TextView android:id="@id/txt_title" android:maxLength="3" style="@style/hall_title_text_title" />
+    </LinearLayout>
+    <ImageView android:id="@id/img_title_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/home_icn_drop_down" android:scaleType="fitXY" android:layout_below="@id/title_container" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name" />
+    <ImageView android:id="@id/img_new" android:layout_toRightOf="@id/title_container" android:contentDescription="@string/app_name" style="@style/hall_title_text_imgnew" />
+</RelativeLayout>

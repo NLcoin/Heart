@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    style="@style/hall_live_item_container"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@id/info_container"
+        style="@style/hall_hot_item_info_container">
+
+        <RelativeLayout style="@style/hall_live_item_icon_container">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/img_creator_icon"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                fresco:fadeDuration="0"
+                fresco:placeholderImage="@drawable/default_head"
+                fresco:placeholderImageScaleType="fitCenter"
+                fresco:roundAsCircle="true"
+                fresco:roundingBorderColor="@color/global_titlebar_background"
+                fresco:roundingBorderWidth="1.0dip" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/img_user_type"
+                android:layout_width="@dimen/hall_userhead_verify_width"
+                android:layout_height="@dimen/hall_userhead_verify_width"
+                android:layout_alignBottom="@id/img_creator_icon"
+                android:layout_alignRight="@id/img_creator_icon"
+                fresco:fadeDuration="0" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@id/txt_creator_name"
+                style="@style/hall_hot_live_item_creatorname_text" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@id/img_location"
+                    style="@style/hall_hot_live_item_location_nopic"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/live_record_time" />
+
+                <TextView
+                    android:id="@id/txt_timeleft"
+                    style="@style/hall_live_item_location_txt_nopic"
+                    android:text="13小时后开播" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/weight_length_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="1.0dip" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@id/cover_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@id/img_cover"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/cell_hall_height"
+            android:contentDescription="@string/app_name"
+            android:focusable="false"
+            android:scaleType="fitXY"
+            fresco:fadeDuration="0" />
+
+        <ImageView
+            android:id="@id/img_type"
+            style="@style/hall_hot_type_img"
+            android:contentDescription="@string/app_name" />
+
+        <View style="@style/line_hall_hot_live_item_divider" />
+
+        <View
+            style="@style/line_hall_hot_live_item_divider"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/txt_room_name"
+        style="@style/hall_hot_room_name_text"
+        android:visibility="gone" />
+
+    <View
+        android:id="@id/selector_view"
+        style="@style/hall_hot_item_selector"
+        android:visibility="gone" />
+</LinearLayout>

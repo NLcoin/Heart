@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meelive.ingkee.ui.view.room.popup.gift.view.RoomContinueGiftView android:id="@id/gift_two" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/room_continue_gift_height" android:layout_marginTop="5.0dip" />
+    <com.meelive.ingkee.ui.view.room.popup.gift.view.RoomContinueGiftView android:id="@id/gift_one" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/room_continue_gift_height" />
+</LinearLayout>

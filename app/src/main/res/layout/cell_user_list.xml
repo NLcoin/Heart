@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/cell_useritem_container">
+
+    <include
+        android:id="@id/user_info_container"
+        layout="@layout/cell_user_infor"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@id/img_follow" />
+
+    <ImageView
+        android:id="@id/img_follow"
+        style="@style/cell_useritem_imgfollow"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/me_follow" />
+</RelativeLayout>

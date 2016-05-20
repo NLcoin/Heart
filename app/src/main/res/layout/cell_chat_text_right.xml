@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/chat_item_text_container_min_space" style="@style/chat_item_text_container"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/txt_time" style="@style/chat_msg_time_item_text" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_user_portrait" android:layout_width="@dimen/live_item_user_head_width" android:layout_height="@dimen/live_item_user_head_width" android:layout_marginTop="@dimen/chat_item_portrait_margintop" android:layout_below="@id/txt_time" android:layout_alignParentRight="true" fresco:fadeDuration="0" fresco:placeholderImage="@drawable/default_head" fresco:placeholderImageScaleType="fitCenter" fresco:roundAsCircle="true" fresco:roundingBorderWidth="@dimen/user_head_bg_stroke_width" fresco:roundingBorderColor="@color/global_titlebar_background" />
+    <LinearLayout android:gravity="center|right" android:id="@id/chat_content_container" android:layout_marginRight="@dimen/chat_item_gift_right_marginright" android:layout_below="@id/txt_time" android:layout_alignParentRight="true" style="@style/chat_content_container">
+        <com.meelive.ingkee.chat.ui.chat.view.ChatMsgSendStatusView android:id="@id/sending_status_container" android:visibility="gone" android:layout_marginRight="@dimen/chat_send_stauts_marginright" style="@style/chat_sending_status_container" />
+        <TextView android:gravity="center|left" android:id="@id/txt_chat_content" android:background="@drawable/chat_item_text_bg_right" android:paddingLeft="@dimen/chat_item_text_paddingright" android:paddingRight="@dimen/chat_item_text_paddingleft" style="@style/chat_item_text_txt" />
+    </LinearLayout>
+</RelativeLayout>

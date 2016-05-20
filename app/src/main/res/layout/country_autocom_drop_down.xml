@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/global_cell_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tai_name" style="@style/text_country_name" />
+    <View android:id="@id/line_black" style="@style/line_black_setting" />
+</LinearLayout>

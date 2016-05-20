@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/global_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/titlebar"
+        style="@style/titlebar_container">
+
+        <ImageButton
+            android:id="@id/back"
+            style="@style/titlebar_back"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@id/title"
+            style="@style/titlebar_title"
+            android:text="@string/room_roomuser_manager" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/adminNum"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@color/white"
+        android:padding="@dimen/titlebar_back_paddingtop"
+        android:textColor="@color/black"
+        android:textSize="16.0sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="12.0dip"
+        android:background="@color/room_admin_list_num" />
+
+    <ListView
+        android:id="@id/adminlist"
+        style="@style/manager_list"
+        android:visibility="visible" />
+</LinearLayout>

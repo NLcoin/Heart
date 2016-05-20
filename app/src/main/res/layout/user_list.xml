@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/global_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/titlebar" style="@style/titlebar_container">
+        <ImageButton android:id="@id/back" android:contentDescription="@string/app_name" style="@style/titlebar_back" />
+        <TextView android:id="@id/title" android:text="@string/userhome_followings" style="@style/titlebar_title" />
+        <ImageView android:id="@id/add" android:src="@drawable/live_icon_add" android:contentDescription="@string/app_name" style="@style/titlebar_img_right" />
+    </RelativeLayout>
+    <com.meelive.ingkee.ui.view.user.FriendsView android:id="@id/friends_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

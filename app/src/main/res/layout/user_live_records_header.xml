@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/live_item_title_line" android:layout_width="2.0dip" android:layout_height="13.0sp" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" />
+    <TextView android:id="@id/txt_lives" android:text="@string/hall_live_records_num_default" style="@style/home_live_item_title_text" />
+    <View android:layout_height="1.0dip" style="@style/weight_length_horizontal" />
+    <LinearLayout android:id="@id/btn_recent" android:paddingLeft="20.0dip" android:paddingRight="10.0dip" style="@style/user_records_header_btn">
+        <ImageView android:id="@id/img_recent" android:contentDescription="@string/app_name" style="@style/user_records_header_img" />
+        <TextView android:id="@id/txt_recent" android:text="@string/hall_live_recent" style="@style/user_records_header_txt" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/btn_hottest" android:paddingLeft="10.0dip" android:paddingRight="20.0dip" style="@style/user_records_header_btn">
+        <ImageView android:id="@id/img_hottest" android:contentDescription="@string/app_name" style="@style/user_records_header_img" />
+        <TextView android:id="@id/txt_hottest" android:text="@string/hall_live_hottest" style="@style/user_records_header_txt" />
+    </LinearLayout>
+</LinearLayout>

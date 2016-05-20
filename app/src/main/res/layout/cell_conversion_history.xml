@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/charge_event_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/txt_withdrawcash" android:layout_marginLeft="3.0dip" android:text="@string/charge_value_default" style="@style/text_charinfor_balance" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:id="@id/txt_withdrawcash_date" android:paddingLeft="0.0dip" android:text="@string/charge_value_default" android:layout_centerVertical="false" style="@style/setting_item_lefttext" />
+        <TextView android:id="@id/txt_withdrawcash_desc" android:layout_marginTop="0.0dip" android:text="@string/charge_conversion_success" android:layout_below="@id/txt_withdrawcash_date" style="@style/charge_event_desc" />
+    </RelativeLayout>
+</RelativeLayout>

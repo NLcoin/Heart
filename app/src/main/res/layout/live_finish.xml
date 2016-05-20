@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/live_finish_container" style="@style/live_finish_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/live_finish_container_in">
+        <TextView android:id="@id/txt_title" android:text="@string/room_live_finish" style="@style/live_finish_title" />
+        <TextView android:id="@id/txt_users_num" style="@style/live_finish_users_num1" />
+        <TextView android:id="@id/txt_my_gain" style="@style/live_finish_users_gain" />
+        <View style="@style/weight_length_vertical" />
+        <TextView android:id="@id/txt_share_tip" style="@style/live_finish_share_tip1" />
+        <LinearLayout android:id="@id/share_container" style="@style/live_finish_share_container">
+            <ImageView android:id="@id/img_weibo" android:src="@drawable/room_endshare_weibo" android:contentDescription="@string/app_name" style="@style/live_finish_share_icon" />
+            <ImageView android:id="@id/img_wechat" android:src="@drawable/room_endshare_wechatx" android:contentDescription="@string/app_name" style="@style/live_finish_share_icon" />
+            <ImageView android:id="@id/img_friendcircle" android:src="@drawable/room_endshare_timeline" android:contentDescription="@string/app_name" style="@style/live_finish_share_icon" />
+            <ImageView android:id="@id/img_qq" android:src="@drawable/room_endshare_qq" android:contentDescription="@string/app_name" style="@style/live_finish_share_icon" />
+            <ImageView android:id="@id/img_qqzone" android:src="@drawable/room_endshare_qqzone" android:contentDescription="@string/app_name" style="@style/live_finish_share_icon" />
+        </LinearLayout>
+        <View style="@style/live_finish_share_space" />
+        <Button android:id="@id/btn_follow" style="@style/live_finish_follow_btn" />
+        <Button android:id="@id/btn_finish" style="@style/live_finish_finish_btn" />
+    </LinearLayout>
+</LinearLayout>

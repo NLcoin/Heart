@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/global_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_portrait" android:contentDescription="@string/app_name" style="@style/user_portrait_img" />
+    <ImageView android:id="@id/btn_back" android:contentDescription="@string/app_name" style="@style/user_portrait_btn_back" />
+    <Button android:id="@id/btn_save" android:layout_marginBottom="60.0dip" android:text="@string/global_save" android:layout_alignParentBottom="true" style="@style/save_portrait" />
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/room_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@id/surfaceview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg" />
+
+    <RelativeLayout
+        android:id="@id/room_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@id/img_loading_bg"
+            style="@style/loading_img_bg"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@id/loading_camera"
+            style="@style/loading_img"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <View
+        android:id="@id/click_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:id="@+id/users_container"
+        style="@style/room_users_container"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gold_count_container"
+        style="@style/room_gold_count_container"
+        android:layout_below="@id/users_container"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/global_home_cell_righttext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="映票" />
+
+        <TextView
+            style="@style/text_room_share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="123456" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_portrait_back_pressed" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/room_chat"
+        style="@style/room_oper_container"
+        layout="@layout/room_chat"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@id/public_chat_container"
+        style="@style/room_public_chat_container"
+        android:layout_above="@id/room_chat">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listview_public_chat"
+            style="@style/room_public_chat_listview" />
+    </LinearLayout>
+    <!--<me.yifeiyuan.library.PeriscopeLayout-->
+    <!--android:id="@+id/heart_layout"-->
+    <!--style="@style/room_heart"/>-->
+    <tyrantgit.widget.HeartLayout
+        android:id="@+id/heart_layout"
+
+        style="@style/room_heart" />
+
+    <include
+        android:id="@+id/oper_container"
+        style="@style/room_oper_container"
+        layout="@layout/live_record_oper" />
+    <!--<include-->
+    <!--layout="@layout/room_full_screen_gift"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent" />-->
+
+</RelativeLayout>

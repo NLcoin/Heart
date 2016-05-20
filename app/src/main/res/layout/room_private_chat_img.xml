@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/room_privatechat_icon"
+    android:paddingRight="5.0dip"
+    android:paddingTop="5.0dip">
+
+    <ImageView
+        android:id="@id/img_private_chat"
+        style="@style/room_bottom_icon"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/bg_btn_room_private_chat" />
+
+    <com.meelive.ingkee.chat.ui.chat.view.BadgeView
+        android:id="@id/txt_private_chat_unread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_room_privatechat_unread"
+        android:text="@string/chat_unread_count_default"
+        android:textSize="12.0sp" />
+</RelativeLayout>

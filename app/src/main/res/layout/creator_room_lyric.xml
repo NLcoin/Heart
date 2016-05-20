@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/room_lyric_padding_left" android:layout_marginTop="12.0dip" android:layout_marginRight="@dimen/room_lyric_padding_left" android:layout_marginBottom="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_music_effect" android:background="@drawable/bg_btn_room_music_effect" style="@style/room_music_oper_btn" />
+        <Button android:id="@id/btn_music_close" android:background="@drawable/bg_btn_room_music_close" android:layout_marginLeft="6.0dip" style="@style/room_music_oper_btn" />
+    </LinearLayout>
+    <com.meelive.ingkee.ui.view.room.view.KTVLyricView android:id="@id/music_lyric" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+    <TextView android:textColor="@color/white" android:id="@id/txt_music_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+</LinearLayout>

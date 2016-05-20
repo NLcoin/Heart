@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/global_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_bar" />
+    <LinearLayout android:orientation="vertical" android:layout_marginTop="@dimen/setting_margintop" style="@style/setting_group_container">
+        <RelativeLayout android:id="@id/new_msg_alert" style="@style/setting_item_container">
+            <TextView android:text="@string/usersetting_live_msg_alert" style="@style/setting_item_lefttext" />
+            <ToggleButton android:id="@id/togglebtn_msg" style="@style/setting_item_tooglebtn_right" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textColor="@color/loading_tip" android:id="@id/txt_no_disturb_tip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/usersetting_nodisturb_open_tip" style="@style/setting_item_tiptext" />
+    <RelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/listview" android:visibility="visible" style="@style/user_list" />
+    </RelativeLayout>
+</LinearLayout>

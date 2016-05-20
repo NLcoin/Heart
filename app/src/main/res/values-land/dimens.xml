@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="room_userinfo_report_height">20.0dip</dimen>
+    <dimen name="room_user_follow_btn_height">35.0dip</dimen>
+    <dimen name="room_userinfo_width">280.0dip</dimen>
+    <dimen name="room_userinfo_opercontainer_space">35.0dip</dimen>
+    <dimen name="room_userinfo_friends_width">270.0dip</dimen>
+    <dimen name="room_user_name_margintop">5.0dip</dimen>
+</resources>

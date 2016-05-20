@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/global_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_bar" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip">
+        <TextView android:id="@id/txt_withdrawcash_all_tip" android:paddingLeft="0.0dip" android:text="@string/charge_withdraw_cash_all" style="@style/setting_item_lefttext" />
+        <TextView android:id="@id/txt_withdrawcash_all" android:layout_marginLeft="3.0dip" android:text="@string/charge_value_default" style="@style/text_charinfor_balance" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/listview" android:visibility="visible" style="@style/user_list" />
+    </RelativeLayout>
+</LinearLayout>

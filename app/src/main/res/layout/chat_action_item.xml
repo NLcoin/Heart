@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/chat_action_height" android:minHeight="@dimen/chat_action_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_action_icon" android:layout_width="@dimen/chat_action_icon_width" android:layout_height="@dimen/chat_action_icon_width" android:src="@drawable/chat_inputbar_gift" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/chat_action_text" android:id="@id/txt_action_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/global_gift" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/global_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_bar" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="25.0dip" android:fillViewport="true">
+        <LinearLayout android:gravity="center|top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/img_tips" android:layout_width="115.0dip" android:layout_height="115.0dip" android:src="@drawable/me_harvest_end" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="18.0sp" android:layout_marginTop="25.0dip" android:text="@string/charge_withdraw_cash_success_tip1" style="@style/text_withdraw_cash_tip" />
+            <TextView android:textSize="16.0sp" android:id="@id/txt_widthdraw_account" android:text="@string/charge_withdraw_cash_to_account" style="@style/declare_text" />
+            <TextView android:id="@id/txt_widthdraw_money" android:layout_marginTop="5.0dip" android:text="@string/charge_withdraw_cash_money" style="@style/text_withdraw_cash" />
+            <Button android:id="@id/btn_ok" android:text="@string/charge_withdraw_cash_complete" style="@style/btn_charge_ok" />
+            <TextView android:textSize="16.0sp" android:id="@id/txt_tip" android:layout_marginTop="5.0dip" android:text="@string/charge_withdraw_success_tip" style="@style/declare_text" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

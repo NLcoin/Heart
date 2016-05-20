@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/container" style="@style/contacts_list_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/titlebar" style="@style/contacts_list_titlebar_indialog">
+        <ImageButton android:id="@id/back" android:contentDescription="@string/app_name" style="@style/contacts_list_titlebar_back_indialog" />
+        <Button android:id="@id/ignore_unread" style="@style/contacts_list_titlebar_ignoreunread_indialog" />
+        <com.meelive.ingkee.ui.widget.RoomContactsDialogMetroLineTabHost android:id="@id/tab_host" style="@style/contacts_list_tab_host" />
+        <FrameLayout android:layout_alignRight="@id/tab_host" style="@style/contacts_list_bageview_container">
+            <com.meelive.ingkee.chat.ui.chat.view.BadgeView android:id="@id/unreadsum" style="@style/contacts_list_bageview_unread" />
+        </FrameLayout>
+    </RelativeLayout>
+    <View style="@style/line_contacts_divider" />
+    <com.meelive.ingkee.chat.ui.chat.view.ContactsViewPager android:id="@id/contactviewpager" style="@style/contacts_list_viewpager" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/toast" android:background="@color/toast_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="300.0dip" android:minHeight="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/theme7" android:gravity="center" android:id="@id/toast_text" android:paddingLeft="@dimen/global_cell_padding" android:paddingRight="@dimen/global_cell_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_centerInParent="true" />
+</RelativeLayout>

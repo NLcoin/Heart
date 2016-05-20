@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/global_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_portrait" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btn_photoalbum" android:layout_alignParentTop="true" fresco:fadeDuration="0" fresco:placeholderImage="@drawable/mr_720" fresco:placeholderImageScaleType="fitXY" fresco:roundAsCircle="false" />
+    <ImageView android:id="@id/btn_back" android:layout_marginTop="60.0dip" android:contentDescription="@string/app_name" style="@style/user_portrait_btn_back" />
+    <Button android:id="@id/btn_photoalbum" android:layout_marginTop="60.0dip" android:text="@string/userhome_choose_from_photoalbum" android:layout_above="@id/btn_take_photo" style="@style/save_portrait" />
+    <Button android:id="@id/btn_take_photo" android:layout_marginTop="15.0dip" android:layout_marginBottom="60.0dip" android:text="@string/login_take_photo" android:layout_alignParentBottom="true" style="@style/save_portrait" />
+</RelativeLayout>

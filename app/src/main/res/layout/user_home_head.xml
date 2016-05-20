@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/home_head_container" style="@style/userhome_head_container"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/title_bar" style="@style/userhome_title_bar">
+        <ImageButton android:id="@id/ib_chat_enter" android:background="@drawable/bg_actionbar_item" android:layout_width="49.0dip" android:layout_height="48.0dip" android:src="@drawable/hallchatenter" android:layout_alignParentRight="true" android:contentDescription="@string/app_name" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginRight="1.0dip" android:layout_alignParentRight="true">
+            <com.meelive.ingkee.chat.ui.chat.view.BadgeView android:textSize="12.0sp" android:id="@id/hallunread" android:layout_width="15.0dip" android:layout_height="15.0dip" android:text="9" />
+        </FrameLayout>
+    </RelativeLayout>
+    <LinearLayout style="@style/userhome_head_info_container">
+        <RelativeLayout android:id="@id/user_portrait_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/user_portrait" android:layout_width="90.0dip" android:layout_height="90.0dip" fresco:fadeDuration="0" fresco:placeholderImage="@drawable/default_head" fresco:placeholderImageScaleType="fitCenter" fresco:roundAsCircle="true" fresco:roundingBorderWidth="1.0dip" fresco:roundingBorderColor="@color/head_stroke_bg" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_user_type" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_alignRight="@id/user_portrait" android:layout_alignBottom="@id/user_portrait" fresco:fadeDuration="0" />
+        </RelativeLayout>
+        <LinearLayout android:id="@id/userhome_userinfo_container" style="@style/userhome_userinfo_container">
+            <LinearLayout android:id="@id/username_age" style="@style/userhome_name_gender_container">
+                <TextView android:id="@id/txt_username" style="@style/userhome_username_txt" />
+                <ImageView android:id="@id/img_gender" android:visibility="gone" android:contentDescription="@string/app_name" style="@style/userhome_gender_img" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_edit" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/img_edit" android:layout_width="19.0dip" android:layout_height="19.0dip" android:src="@drawable/me_btn_bianji" android:scaleType="fitXY" android:contentDescription="@string/app_name" style="@style/userhome_edit_img" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:id="@id/txt_userid" android:text="ID:0000000" style="@style/userhome_desc_txt" />
+            <TextView android:id="@id/txt_desc" style="@style/userhome_desc_real_txt" />
+            <LinearLayout android:id="@id/verify_container" style="@style/userhome_head_verify_cotainer">
+                <TextView android:id="@id/txt_verify_reason" style="@style/userhome_desc_txt" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/account_inout_container" style="@style/userhome_account_inout_container">
+                <TextView android:id="@id/txt_account_inout" android:text="@string/userhome_account_inout_default" style="@style/userhome_desc_txt" />
+                <ImageView android:id="@id/img_balance_icon" android:contentDescription="@string/app_name" style="@style/userhome_balance_icon_img" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/userhome_head_info_line" />
+    <com.meelive.ingkee.ui.view.main.my.view.UserHomeGiftContributorListView android:id="@id/userhome_gift_contributors" style="@style/userhome_head_gift_contributors_out" />
+    <LinearLayout android:id="@id/friend_oper_container" style="@style/friend_oper_container">
+        <RelativeLayout android:id="@id/btn_lives" style="@style/friend_oper_btn">
+            <TextView android:id="@id/txt_lives" android:text="@string/userhome_lives_num_default" style="@style/userhead_text_fans" />
+        </RelativeLayout>
+        <View android:id="@id/line_fans" style="@style/friend_oper_line" />
+        <RelativeLayout android:id="@id/btn_followings" style="@style/friend_oper_btn">
+            <TextView android:id="@id/txt_followings" android:text="@string/userhome_follows_num_default" style="@style/userhead_text_fans" />
+        </RelativeLayout>
+        <View android:id="@id/line_lives" style="@style/friend_oper_line" />
+        <RelativeLayout android:id="@id/btn_fans" style="@style/friend_oper_btn">
+            <TextView android:id="@id/txt_fans" android:text="@string/userhome_fans_num_default" style="@style/userhead_text_fans" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

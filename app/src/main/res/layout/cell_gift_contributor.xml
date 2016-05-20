@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/cell_useritem_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/txt_rank" android:text="@string/room_contributor_rank" style="@style/gift_contributor_rank_normal" />
+    <include android:id="@id/contributor_info_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/txt_rank" android:layout_centerVertical="true" layout="@layout/cell_contributor_infor" />
+</RelativeLayout>

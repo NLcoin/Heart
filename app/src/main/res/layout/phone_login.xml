@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/global_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_bar" />
+    <LinearLayout android:gravity="center|top" android:orientation="vertical" android:paddingLeft="20.0dip" android:paddingTop="39.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/phone_login_choose_area" android:background="@drawable/bg_shape_bind_phonenum_edittext" android:layout_width="fill_parent" android:layout_height="@dimen/bind_phonenum_edittext_height">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/bind_phonenum_edittext_textsize" android:textColor="@color/bind_phonenum_edittext_hint" android:id="@id/phone_login_txt_area" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/bind_phonenum_edittext_textsize" android:textColor="@color/bind_phonenum_edittext_hint" android:id="@id/phone_login_txt_country" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cell_hall_paddingleft" />
+            </LinearLayout>
+            <ImageView android:layout_width="12.0dip" android:layout_height="23.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/me_go" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/bind_phonenum_edittext_height" android:layout_marginTop="@dimen/bind_phonenum_divider_height">
+            <com.meelive.ingkee.ui.widget.DMEditText android:textSize="@dimen/bind_phonenum_edittext_textsize" android:textColor="@color/bind_phonenum_edittext_text" android:textColorHint="@color/bind_phonenum_edittext_hint" android:id="@id/phone_login_edit_phonenum" android:background="@drawable/bg_shape_bind_phonenum_edittext" android:paddingLeft="@dimen/bind_phonenum_edittext_paddingleft" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/charge_input_phonenum" android:layout_weight="1.0" android:inputType="phone" />
+            <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/phone_login_btn_verify" android:background="@drawable/phone_login_verify" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="@string/charge_verify" />
+        </LinearLayout>
+        <com.meelive.ingkee.ui.widget.DMEditText android:textSize="@dimen/bind_phonenum_edittext_textsize" android:textColor="@color/bind_phonenum_edittext_text" android:textColorHint="@color/bind_phonenum_edittext_hint" android:id="@id/phone_login_edit_verifycode" android:background="@drawable/bg_shape_bind_phonenum_edittext" android:paddingLeft="@dimen/bind_phonenum_edittext_paddingleft" android:layout_width="fill_parent" android:layout_height="@dimen/bind_phonenum_edittext_height" android:layout_marginTop="@dimen/bind_phonenum_divider_height" android:hint="@string/charge_input_verifycode" android:inputType="number" />
+        <TextView android:textSize="@dimen/bind_phonenum_edittext_textsize" android:textColor="@color/bind_phonenum_tip_text" android:gravity="center" android:id="@id/phone_login_txt_verifycode_tip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/login_phone_tip" />
+        <Button android:id="@id/phone_login_btn_ok" android:layout_height="@dimen/bind_phonenum_edittext_height" style="@style/btn_bind_phonenum_next" />
+    </LinearLayout>
+</LinearLayout>

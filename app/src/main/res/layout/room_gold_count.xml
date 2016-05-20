@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/room_gold_count_container_base">
+
+    <TextView
+        android:id="@id/txt_gold_count_tip"
+        style="@style/setting_item_lefttext"
+        android:paddingLeft="0.0dip"
+        android:text="@string/charge_ingkee_point"
+        android:textColor="@color/global_titlebar_background" />
+
+    <TextView
+        android:id="@id/txt_gold_count"
+        style="@style/setting_item_lefttext"
+        android:layout_marginLeft="5.0dip"
+        android:paddingLeft="0.0dip"
+        android:text="123456"
+        android:textColor="@color/white" />
+    <!--@string/charge_value_default-->
+    <ImageView
+        android:id="@id/img_balance_icon"
+        android:layout_width="16.0sp"
+        android:layout_height="16.0sp"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="8.0dip"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/room_yingpiao_check" />
+</LinearLayout>

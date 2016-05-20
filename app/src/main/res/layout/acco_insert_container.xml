@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/global_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/head_container" android:layout_width="fill_parent" android:layout_height="112.0dip">
+        <RelativeLayout android:id="@id/titlebar" android:background="@color/transparent_color" style="@style/titlebar_container">
+            <ImageButton android:id="@id/back" android:layout_centerVertical="true" android:contentDescription="@string/app_name" style="@style/titlebar_back" />
+            <TextView android:id="@id/title" android:text="@string/title" style="@style/titlebar_title" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/acco_search_edit_container" style="@style/acco_search_edit_container">
+            <ImageButton android:id="@id/btn_searchicon" android:contentDescription="@string/app_name" style="@style/cell_search_searchicon" />
+            <EditText android:id="@id/edit" android:hint="@string/acco_main_search_hint" android:layout_toRightOf="@id/btn_searchicon" style="@style/cell_search_edittext" />
+        </RelativeLayout>
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" layout="@layout/list_divider" />
+    <com.meelive.ingkee.ui.widget.DMViewPager android:id="@id/pager" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

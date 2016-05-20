@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/global_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_bar" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" style="@style/charge_container">
+            <LinearLayout android:orientation="vertical" android:layout_marginTop="@dimen/setting_margintop" style="@style/setting_group_container">
+                <RelativeLayout style="@style/setting_item_container">
+                    <TextView android:id="@id/txt_balance_tip" android:text="@string/charge_balance" style="@style/setting_item_lefttext" />
+                    <ImageView android:id="@id/img_balance_icon" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/txt_balance_tip" android:contentDescription="@string/app_name" style="@style/charinfor_balance_img" />
+                    <TextView android:id="@id/txt_balance" android:layout_marginLeft="3.0dip" android:layout_toRightOf="@id/img_balance_icon" style="@style/text_charinfor_balance" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:id="@id/txt_choose_paymethod_tip" android:text="@string/charge_choose_paymethod" style="@style/charinfor_tip_text" />
+            <com.meelive.ingkee.ui.widget.GridViewShowAll android:id="@id/grid_paymethods" style="@style/charinfor_payments_grid" />
+            <TextView android:id="@id/txt_choose_chargeinfo_tip" android:text="@string/charge_choose_numof_charge_default" style="@style/charinfor_tip_text" />
+            <RelativeLayout android:id="@id/container" style="@style/weight_length_vertical">
+                <com.meelive.ingkee.ui.widget.ListViewShowAll android:id="@id/listview_chargeinfos" style="@style/charinfor_events_listview" />
+            </RelativeLayout>
+            <TextView android:id="@id/txt_charge_free_tip" android:text="@string/charge_free" style="@style/charinfor_tip_text" />
+            <com.meelive.ingkee.ui.widget.ListViewShowAll android:id="@id/listview_eventinfos" style="@style/charinfor_events_listview" />
+            <TextView android:id="@id/txt_charge_tip1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/charge_meepay_customservice" style="@style/charinfor_tip_text" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

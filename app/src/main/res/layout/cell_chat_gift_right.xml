@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/chat_item_gift_container"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/txt_time" style="@style/chat_msg_time_item_text" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_user_portrait" android:layout_width="@dimen/live_item_user_head_width" android:layout_height="@dimen/live_item_user_head_width" android:layout_marginTop="@dimen/chat_item_portrait_margintop" android:layout_below="@id/txt_time" android:layout_alignParentRight="true" fresco:fadeDuration="0" fresco:placeholderImage="@drawable/default_head" fresco:placeholderImageScaleType="centerInside" fresco:roundAsCircle="true" fresco:roundingBorderWidth="@dimen/user_head_bg_stroke_width" fresco:roundingBorderColor="@color/global_titlebar_background" />
+    <RelativeLayout android:id="@id/gift_info_container" android:background="@drawable/chat_item_gift_bg_right" android:paddingRight="@dimen/chat_item_gift_paddingleft" android:layout_marginRight="@dimen/chat_item_gift_right_marginright" android:layout_below="@id/txt_time" android:layout_alignParentRight="true" style="@style/chat_gift_info_container">
+        <View style="@style/chat_gift_item_dash" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_gift_icon" android:background="@drawable/chat_item_gift_icon_bg" android:layout_width="@dimen/chat_item_gift_icon_width" android:layout_height="@dimen/chat_item_gift_icon_width" android:layout_marginTop="@dimen/chat_item_gift_paddingtop" android:layout_marginRight="@dimen/chat_item_gift_icon_marginleft" android:layout_alignParentRight="true" android:contentDescription="@string/app_name" fresco:fadeDuration="0" fresco:placeholderImageScaleType="centerInside" fresco:actualImageScaleType="centerInside" fresco:roundAsCircle="false" />
+        <LinearLayout android:id="@id/gift_value_container" android:layout_below="@id/img_gift_icon" android:layout_alignParentRight="true" style="@style/chat_gift_value_container">
+            <TextView android:id="@id/txt_gift_value" style="@style/chat_gift_value_txt" />
+            <ImageView android:contentDescription="@string/app_name" style="@style/chat_gift_value_img" />
+        </LinearLayout>
+        <ImageView android:id="@id/img_gift_tip_icon" android:layout_marginRight="@dimen/chat_item_gift_tip_icon_marginleft" android:layout_toLeftOf="@id/img_gift_icon" android:contentDescription="@string/app_name" style="@style/chat_gift_img_tip_icon" />
+        <TextView android:id="@id/txt_gift_tip" android:layout_marginRight="2.0dip" android:layout_toLeftOf="@id/img_gift_tip_icon" android:layout_alignBottom="@id/img_gift_tip_icon" style="@style/chat_gift_txt_tip" />
+        <View android:id="@id/line_gift" android:layout_marginRight="@dimen/chat_item_gift_tip_icon_marginleft" android:layout_toLeftOf="@id/img_gift_icon" android:layout_below="@id/img_gift_tip_icon" style="@style/chat_gift_item_line" />
+        <TextView android:id="@id/txt_gift_content" android:layout_marginRight="@dimen/chat_item_gift_tip_icon_marginleft" android:text="@string/chat_gift_text_content_default" android:layout_toLeftOf="@id/img_gift_icon" android:layout_below="@id/line_gift" style="@style/chat_gift_item_content_txt" />
+        <ImageView android:id="@id/img_gift_tip_top" android:src="@drawable/chat_gift_byme" android:contentDescription="@string/app_name" style="@style/chat_gift_item_img_tip_top" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="@dimen/chat_item_gift_right_marginright" android:layout_below="@id/gift_info_container" android:layout_alignParentRight="true">
+        <ImageView android:layout_width="@dimen/chat_item_textsize" android:layout_height="@dimen/chat_item_textsize" android:src="@drawable/chat_item_gift_stick" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+        <TextView android:id="@id/txt_gift_exp" android:text="@string/chat_gift_exp_default" style="@style/chat_gift_txt_tip" />
+    </LinearLayout>
+    <com.meelive.ingkee.chat.ui.chat.view.ChatMsgSendStatusView android:id="@id/sending_status_container" android:visibility="gone" android:layout_marginTop="35.0dip" android:layout_marginRight="@dimen/chat_send_stauts_marginright" android:layout_toLeftOf="@id/gift_info_container" style="@style/chat_sending_status_container" />
+</RelativeLayout>

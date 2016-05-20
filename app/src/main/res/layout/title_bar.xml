@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/titlebar"
+    style="@style/titlebar_container">
+
+    <ImageButton
+        android:id="@id/back"
+        style="@style/titlebar_back"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@id/title"
+        style="@style/titlebar_title"
+        android:text="@string/title" />
+
+    <Button
+        android:id="@id/rbtn"
+        style="@style/titlebar_rbtn" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/listview" android:visibility="visible" style="@style/user_list" />
+    <RelativeLayout android:id="@id/failure_container" style="@style/friends_failure_container">
+        <ImageView android:id="@id/img_failure" android:contentDescription="@string/app_name" style="@style/friends_failure_img" />
+        <TextView android:id="@id/no_users_tip" android:layout_below="@id/img_failure" style="@style/friends_nousers_tip" />
+    </RelativeLayout>
+</RelativeLayout>

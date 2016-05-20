@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    style="@style/popup_room_padding"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/room_edittext_bg_stroke"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TableRow
+        android:id="@id/btn_qqzone"
+        style="@style/btn_room_share">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@id/img_qqzone"
+            android:layout_width="@dimen/room_share_icon_width"
+            android:layout_height="@dimen/room_share_icon_width"
+            android:layout_marginRight="5.0dip"
+            fresco:fadeDuration="0"
+            fresco:placeholderImage="@drawable/room_share_qqzone"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:roundAsCircle="false" />
+
+        <TextView
+            android:id="@id/txt_qqzone"
+            style="@style/text_room_share"
+            android:text="@string/share_qqzone" />
+    </TableRow>
+
+    <TableRow style="@style/btn_room_share">
+
+        <View
+            style="@style/line_room_share"
+            android:layout_span="2" />
+    </TableRow>
+
+    <TableRow
+        android:id="@id/btn_qq"
+        style="@style/btn_room_share">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@id/img_qq"
+            android:layout_width="@dimen/room_share_icon_width"
+            android:layout_height="@dimen/room_share_icon_width"
+            android:layout_marginRight="5.0dip"
+            fresco:fadeDuration="0"
+            fresco:placeholderImage="@drawable/room_share_qq"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:roundAsCircle="false" />
+
+        <TextView
+            android:id="@id/txt_qq"
+            style="@style/text_room_share"
+            android:text="@string/share_qq" />
+    </TableRow>
+
+    <TableRow style="@style/btn_room_share">
+
+        <View
+            style="@style/line_room_share"
+            android:layout_span="2" />
+    </TableRow>
+
+    <TableRow
+        android:id="@id/btn_sina"
+        style="@style/btn_room_share">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@id/img_sina"
+            android:layout_width="@dimen/room_share_icon_width"
+            android:layout_height="@dimen/room_share_icon_width"
+            android:layout_marginRight="5.0dip"
+            fresco:fadeDuration="0"
+            fresco:placeholderImage="@drawable/room_share_sina"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:roundAsCircle="false" />
+
+        <TextView
+            android:id="@id/txt_sina"
+            style="@style/text_room_share"
+            android:text="@string/share_sinaweibo" />
+    </TableRow>
+
+    <TableRow style="@style/btn_room_share">
+
+        <View
+            style="@style/line_room_share"
+            android:layout_span="2" />
+    </TableRow>
+
+    <TableRow
+        android:id="@id/btn_friendcircle"
+        style="@style/btn_room_share">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@id/img_friendcircle"
+            android:layout_width="@dimen/room_share_icon_width"
+            android:layout_height="@dimen/room_share_icon_width"
+            android:layout_marginRight="5.0dip"
+            fresco:fadeDuration="0"
+            fresco:placeholderImage="@drawable/room_share_friendcircle"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:roundAsCircle="false" />
+
+        <TextView
+            android:id="@id/txt_friendcircle"
+            style="@style/text_room_share"
+            android:text="@string/share_friendcircle" />
+    </TableRow>
+
+    <TableRow style="@style/btn_room_share">
+
+        <View
+            style="@style/line_room_share"
+            android:layout_span="2" />
+    </TableRow>
+
+    <TableRow
+        android:id="@id/btn_wechat"
+        style="@style/btn_room_share">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@id/img_wechat"
+            android:layout_width="@dimen/room_share_icon_width"
+            android:layout_height="@dimen/room_share_icon_width"
+            android:layout_marginRight="5.0dip"
+            fresco:fadeDuration="0"
+            fresco:placeholderImage="@drawable/room_share_wechat"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:roundAsCircle="false" />
+
+        <TextView
+            android:id="@id/txt_wechat"
+            style="@style/text_room_share"
+            android:text="@string/share_wechat" />
+    </TableRow>
+</TableLayout>

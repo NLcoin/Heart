@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/global_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/setting_group_container"
+            android:layout_marginTop="@dimen/setting_margintop"
+            android:orientation="vertical">
+
+            <View style="@style/line_black_setting_full" />
+
+            <RelativeLayout
+                android:id="@id/account_safe"
+                style="@style/setting_item_container">
+
+                <TextView
+                    style="@style/setting_item_lefttext"
+                    android:text="@string/settings_account_safe" />
+
+                <ImageView
+                    style="@style/global_home_cell_rightimage"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View style="@style/line_black_setting_full" />
+
+        <LinearLayout
+            style="@style/setting_group_container"
+            android:layout_marginTop="@dimen/usersetting_item_margintop"
+            android:orientation="vertical">
+
+            <View style="@style/line_black_setting_full" />
+
+            <RelativeLayout
+                android:id="@id/black_list"
+                style="@style/setting_item_container">
+
+                <TextView
+                    style="@style/setting_item_lefttext"
+                    android:text="@string/settings_balck_list" />
+
+                <ImageView
+                    style="@style/global_home_cell_rightimage"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View style="@style/line_black_setting" />
+
+        <LinearLayout
+            style="@style/setting_group_container"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@id/manage_push"
+                style="@style/setting_item_container">
+
+                <TextView
+                    style="@style/setting_item_lefttext"
+                    android:text="@string/settings_manage_push" />
+
+                <ImageView
+                    style="@style/global_home_cell_rightimage"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View style="@style/line_black_setting" />
+
+        <LinearLayout
+            style="@style/setting_group_container"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@id/clear_cache"
+                style="@style/userinfo_nickname_container">
+
+                <TextView
+                    style="@style/setting_item_lefttext"
+                    android:text="@string/usersetting_clear_cache" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/global_right_padding"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@id/txt_cache_size"
+                        style="@style/setting_item_righttext"
+                        android:layout_alignParentRight="false"
+                        android:layout_marginRight="0.0dip"
+                        android:text="@string/usersetting_default_cache_size" />
+
+                    <ProgressBar
+                        android:id="@id/probar_clear_cache"
+                        android:layout_width="20.0dip"
+                        android:layout_height="20.0dip"
+                        android:layout_centerInParent="true"
+                        android:indeterminate="true"
+                        android:indeterminateDrawable="@drawable/icn_loading_indicator"
+                        android:indeterminateDuration="2000"
+                        android:indeterminateOnly="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/setting_group_container"
+            android:layout_marginTop="@dimen/usersetting_item_margintop"
+            android:orientation="vertical">
+
+            <View style="@style/line_black_setting_full" />
+
+            <RelativeLayout
+                android:id="@id/feed_back"
+                style="@style/userinfo_nickname_container">
+
+                <TextView
+                    style="@style/setting_item_lefttext"
+                    android:text="@string/settings_feedback" />
+
+                <ImageView
+                    style="@style/global_home_cell_rightimage"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View style="@style/line_black_setting" />
+
+        <LinearLayout
+            style="@style/setting_group_container"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@id/about_us"
+                style="@style/userinfo_nickname_container">
+
+                <TextView
+                    style="@style/setting_item_lefttext"
+                    android:text="@string/settings_about_us" />
+
+                <ImageView
+                    style="@style/global_home_cell_rightimage"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View style="@style/line_black_setting_full" />
+
+        <View style="@style/weight_length_vertical" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50.0dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@id/btn_aboutus"
+                style="@style/declare_container">
+
+                <TextView
+                    android:id="@id/txt_aboutus"
+                    style="@style/declare_text"
+                    android:text="@string/usersetting_aboutus"
+                    android:textColor="@color/userhome_aboutus" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

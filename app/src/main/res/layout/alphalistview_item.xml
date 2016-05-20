@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/global_cell_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/line_black_top" style="@style/line_choose_area_item_top" />
+    <TextView android:id="@id/tai_first_alpha" android:text="@string/login_default_alphabet" style="@style/text_country_alphabet" />
+    <View android:id="@id/line_alphabet" style="@style/line_alphabet" />
+    <View android:id="@id/line_black" style="@style/line_black_choose_areacode" />
+    <TextView android:id="@id/tai_name" style="@style/text_country_name" />
+</LinearLayout>

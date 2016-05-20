@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@id/home_head_container"
+    style="@style/userhome_head_container">
+
+    <RelativeLayout
+        android:id="@id/title_bar"
+        style="@style/userhome_title_bar">
+
+        <ImageButton
+            android:id="@id/back"
+            style="@style/titlebar_back"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:contentDescription="@string/app_name" />
+
+        <LinearLayout
+            android:id="@id/onlive_container"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/titlebar_back_paddingtop">
+
+            <ImageView
+                android:layout_width="10.0dip"
+                android:layout_height="12.0dip"
+                android:layout_marginRight="3.0dip"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/onlive_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/userhome_onlive"
+                android:textColor="@color/white"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout style="@style/userhome_head_info_container">
+
+        <RelativeLayout
+            android:id="@id/user_portrait_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/user_portrait"
+                android:layout_width="90.0dip"
+                android:layout_height="90.0dip"
+                android:layout_marginLeft="5.0dip"
+                fresco:fadeDuration="0"
+                fresco:placeholderImage="@drawable/default_head"
+                fresco:placeholderImageScaleType="fitCenter"
+                fresco:roundAsCircle="true"
+                fresco:roundingBorderColor="@color/head_stroke_bg"
+                fresco:roundingBorderWidth="2.0dip" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/img_user_type"
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_alignBottom="@id/user_portrait"
+                android:layout_alignRight="@id/user_portrait"
+                fresco:fadeDuration="0" />
+        </RelativeLayout>
+
+        <LinearLayout style="@style/userhome_userinfo_container">
+
+            <LinearLayout
+                android:id="@id/username_age"
+                style="@style/userhome_name_gender_container">
+
+                <TextView
+                    android:id="@id/txt_username"
+                    style="@style/userhome_username_txt" />
+
+                <ImageView
+                    android:id="@id/img_gender"
+                    style="@style/userhome_gender_img"
+                    android:contentDescription="@string/app_name" />
+
+                <ImageView
+                    android:id="@id/img_my_level"
+                    style="@style/userhome_other_level_img"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/rank_1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/txt_userid"
+                style="@style/userhome_desc_txt"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@id/txt_desc"
+                style="@style/userhome_desc_real_txt" />
+
+            <LinearLayout
+                android:id="@id/verify_container"
+                style="@style/userhome_head_verify_cotainer">
+
+                <TextView
+                    android:id="@id/txt_verify_reason"
+                    style="@style/userhome_desc_txt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/account_inout_container"
+                style="@style/userhome_account_inout_container">
+
+                <TextView
+                    android:id="@id/txt_account_inout"
+                    style="@style/userhome_desc_txt"
+                    android:text="@string/userhome_account_inout_default" />
+
+                <ImageView
+                    android:id="@id/img_balance_icon"
+                    style="@style/userhome_balance_icon_img"
+                    android:contentDescription="@string/app_name" />
+
+                <Button
+                    android:id="@id/btn_manage_inuser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0dip"
+                    android:background="@drawable/bg_actionbar_item"
+                    android:text="@string/global_manage"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/userhome_head_info_line" />
+
+    <com.meelive.ingkee.ui.view.main.my.view.UserHomeGiftContributorListView
+        android:id="@id/userhome_gift_contributors"
+        style="@style/userhome_head_gift_contributors_out" />
+
+    <LinearLayout
+        android:id="@id/friend_oper_container"
+        style="@style/friend_oper_container">
+
+        <RelativeLayout
+            android:id="@id/btn_lives"
+            style="@style/friend_oper_btn">
+
+            <TextView
+                android:id="@id/txt_lives"
+                style="@style/userhead_other_text_fans"
+                android:text="@string/userhome_lives_num_default" />
+
+            <View
+                android:id="@id/line_bottom_lives"
+                style="@style/userhome_line_bottom_oper" />
+        </RelativeLayout>
+
+        <View
+            android:id="@id/line_fans"
+            style="@style/friend_oper_line" />
+
+        <RelativeLayout
+            android:id="@id/btn_followings"
+            style="@style/friend_oper_btn">
+
+            <TextView
+                android:id="@id/txt_followings"
+                style="@style/userhead_other_text_fans"
+                android:text="@string/userhome_follows_num_default" />
+
+            <View
+                android:id="@id/line_bottom_followers"
+                style="@style/userhome_line_bottom_oper" />
+        </RelativeLayout>
+
+        <View
+            android:id="@id/line_lives"
+            style="@style/friend_oper_line" />
+
+        <RelativeLayout
+            android:id="@id/btn_fans"
+            style="@style/friend_oper_btn">
+
+            <TextView
+                android:id="@id/txt_fans"
+                style="@style/userhead_other_text_fans"
+                android:text="@string/userhome_fans_num_default" />
+
+            <View
+                android:id="@id/line_bottom_fans"
+                style="@style/userhome_line_bottom_oper" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

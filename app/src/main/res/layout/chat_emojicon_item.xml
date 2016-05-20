@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/chat_emoji_icon_width"
+    android:layout_height="@dimen/chat_emoji_icon_width">
+
+    <TextView
+        android:id="@id/emojicon_icon"
+        android:layout_width="@dimen/chat_emoji_icon_width"
+        android:layout_height="@dimen/chat_emoji_icon_width"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20.0sp" />
+
+    <ImageView
+        android:id="@id/emojicon_delete"
+        android:layout_width="@dimen/chat_emoji_icon_width"
+        android:layout_height="@dimen/chat_emoji_icon_width"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        android:src="@drawable/chat_emoji_del_p"
+        android:visibility="gone" />
+</RelativeLayout>

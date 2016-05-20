@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/top_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View style="@style/redpacket_top_topline" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/room_red_packet_top_text" android:gravity="center" android:id="@id/txt_top" android:background="@color/room_red_packet_top_bg" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="" />
+    </LinearLayout>
+    <ListView android:id="@id/listview" android:visibility="visible" android:layout_below="@id/top_container" style="@style/user_list" />
+    <RelativeLayout android:id="@id/failure_container" android:visibility="gone" style="@style/friends_failure_container">
+        <ImageView android:id="@id/img_failure" android:layout_width="50.0dip" android:layout_height="50.0dip" android:contentDescription="@string/app_name" style="@style/friends_failure_img" />
+        <TextView android:id="@id/no_users_tip" android:layout_marginTop="5.0dip" android:layout_below="@id/img_failure" style="@style/friends_nousers_tip" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/loading_progressbar" android:visibility="gone" style="@style/loading_progress_container">
+        <ProgressBar android:id="@id/progress_loading" android:layout_width="26.0dip" android:layout_height="26.0dip" style="@style/loading_progressbar" />
+        <TextView android:textSize="14.0sp" android:id="@id/txt_loading" android:paddingTop="5.0dip" style="@style/loading_text" />
+    </LinearLayout>
+</RelativeLayout>

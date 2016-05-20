@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/chat_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/global_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/titlebar"
+        style="@style/titlebar_container">
+
+        <ImageButton
+            android:id="@id/back"
+            style="@style/titlebar_back"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@id/txt_chat_username"
+            style="@style/titlebar_title"
+            android:text="@string/chat_title_default" />
+
+        <ImageButton
+            android:id="@id/img_user"
+            style="@style/chat_room_titlebar_img_user"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@id/listview_chat"
+        style="@style/chat_room_listview_chat"
+        android:layout_above="@id/chat_inputbar_container"
+        android:layout_below="@id/titlebar" />
+
+    <com.meelive.ingkee.chat.ui.chat.view.ChatInputView
+        android:id="@id/chat_inputbar_container"
+        style="@style/chat_input" />
+
+    <View
+        android:id="@id/line_titlebar_bottom"
+        style="@style/line_contacts_divider"
+        android:layout_below="@id/titlebar"
+        android:visibility="gone" />
+</RelativeLayout>

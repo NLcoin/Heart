@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:gravity="center" android:orientation="vertical" android:background="@color/room_edittext_bg_stroke" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/popup_room_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <TableRow android:id="@id/btn_switchcamera" style="@style/btn_room_share">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_switchcamera" android:layout_width="@dimen/room_share_icon_width" android:layout_height="@dimen/room_share_icon_width" android:layout_marginRight="5.0dip" fresco:fadeDuration="0" fresco:placeholderImage="@drawable/room_set_camera" fresco:placeholderImageScaleType="fitXY" fresco:roundAsCircle="false" />
+        <TextView android:id="@id/txt_switchcamera" android:text="@string/live_switchcamera" style="@style/text_room_share" />
+    </TableRow>
+    <TableRow style="@style/btn_room_share">
+        <View android:layout_span="2" style="@style/line_room_share" />
+    </TableRow>
+    <TableRow android:id="@id/btn_flashlight" style="@style/btn_room_share">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_flashlight" android:layout_width="@dimen/room_share_icon_width" android:layout_height="@dimen/room_share_icon_width" android:layout_marginRight="5.0dip" fresco:fadeDuration="0" fresco:placeholderImage="@drawable/room_set_flashlight" fresco:placeholderImageScaleType="fitXY" fresco:roundAsCircle="false" />
+        <TextView android:id="@id/txt_flashlight" android:text="@string/live_flashlight" style="@style/text_room_share" />
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@id/click_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <include
+        android:id="@+id/tv_header_top"
+        style="@style/room_users_container"
+        layout="@layout/room_users" />
+
+    <include
+        android:id="@+id/tv_header_left"
+        style="@style/room_gold_count_container"
+        layout="@layout/room_gold_count"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/room_gold_count_bg"
+        android:layout_below="@id/tv_header_top" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@+id/public_chat_container"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="This is gift area"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/layout_bottom"
+        style="@style/room_oper_container"
+        layout="@layout/room_chat"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@id/public_chat_container"
+        style="@style/room_public_chat_container"
+        android:layout_above="@id/layout_bottom">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listview_public_chat"
+            style="@style/room_public_chat_listview" />
+    </LinearLayout>
+
+    <tyrantgit.widget.HeartLayout
+        android:id="@+id/heart_layout"
+        style="@style/room_heart" />
+
+    <include
+        android:id="@+id/layout_oper_container"
+        style="@style/room_oper_container"
+        layout="@layout/live_record_oper" />
+
+
+</RelativeLayout>

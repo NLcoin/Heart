@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/room_gift_container">
+
+    <com.meelive.ingkee.ui.widget.DMViewPager
+        android:id="@id/pager"
+        style="@style/room_gift_pager" />
+
+    <View
+        android:id="@id/line_grey"
+        style="@style/line_room_gift_popup"
+        android:layout_below="@id/pager"
+        android:background="@color/chat_gift_line" />
+
+    <!--<com.meelive.ingkee.ui.widget.DMSlidingIndicator-->
+        <!--android:id="@id/gallery_indicator"-->
+        <!--style="@style/room_gift_indicator"-->
+        <!--android:layout_alignBottom="@id/pager"-->
+        <!--duomi:indicator_drawable="@drawable/indicator_private_chat_gift"-->
+        <!--duomi:indicator_margin="3.0dip" />-->
+
+    <LinearLayout
+        android:id="@id/oper_container"
+        style="@style/room_gift_oper_container"
+        android:layout_below="@id/line_grey">
+
+        <LinearLayout
+            android:id="@id/btn_charge"
+            style="@style/room_gift_btn_charge">
+
+            <TextView style="@style/room_gift_chargeinfor_balance" />
+
+            <TextView
+                android:id="@id/txt_account_balance"
+                style="@style/room_gift_account_balance_text" />
+
+            <ImageView
+                style="@style/room_gift_account_balance_img"
+                android:contentDescription="@string/app_name" />
+
+            <ImageView
+                style="@style/room_gift_account_balance_right_img"
+                android:contentDescription="@string/app_name" />
+        </LinearLayout>
+
+        <View
+            style="@style/weight_length_horizontal"
+            android:layout_height="1.0dip" />
+
+        <Button
+            android:id="@id/btn_send"
+            style="@style/room_gift_btn_send" />
+    </LinearLayout>
+
+    <!--<com.meelive.ingkee.ui.view.room.popup.gift.widget.ContinueSendButton-->
+        <!--android:id="@id/btn_continue_send"-->
+        <!--style="@style/room_gift_btn_continuesend"-->
+        <!--android:layout_alignBottom="@id/oper_container" />-->
+</RelativeLayout>

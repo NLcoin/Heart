@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@id/room_full_screen_gift_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@id/car_one"
+        android:layout_width="fill_parent"
+        android:layout_height="132.0dip"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="32.0dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/car_one_redpoint"
+                android:layout_width="12.0dip"
+                android:layout_height="12.0dip"
+                android:layout_gravity="center_vertical"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="0" />
+
+            <TextView
+                android:id="@id/room_gift_car_one_send_person"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:ellipsize="middle"
+                android:gravity="center_vertical"
+                android:shadowColor="@color/room_gift_text_shadow"
+                android:shadowDx="2.0"
+                android:shadowDy="2.0"
+                android:shadowRadius="1.0"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="252.0dip"
+            android:layout_height="100.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32.0dip">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/car_one_body"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="0" />
+
+            <RelativeLayout
+                android:id="@id/car_one_light"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@id/car_one_left_light"
+                    android:layout_width="124.0dip"
+                    android:layout_height="70.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="-25.0dip"
+                    android:layout_marginTop="33.0dip"
+                    fresco:actualImageScaleType="fitCenter"
+                    fresco:fadeDuration="0" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@id/car_one_right_light"
+                    android:layout_width="64.0dip"
+                    android:layout_height="73.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="-31.0dip"
+                    android:layout_marginTop="8.0dip"
+                    fresco:actualImageScaleType="fitCenter"
+                    fresco:fadeDuration="0" />
+            </RelativeLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/car_one_front_wheel"
+                android:layout_width="35.0dip"
+                android:layout_height="35.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="87.0dip"
+                android:layout_marginTop="49.0dip"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="0" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/car_one_back_wheel"
+                android:layout_width="32.0dip"
+                android:layout_height="32.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="210.0dip"
+                android:layout_marginTop="24.0dip"
+                android:contentDescription="@string/placeholder_text"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="0" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/car_two"
+        android:layout_width="fill_parent"
+        android:layout_height="148.0dip"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="32.0dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/car_two_redpoint"
+                android:layout_width="12.0dip"
+                android:layout_height="12.0dip"
+                android:layout_gravity="center_vertical"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="0" />
+
+            <TextView
+                android:id="@id/room_gift_car_two_send_person"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:ellipsize="middle"
+                android:gravity="center_vertical"
+                android:shadowColor="@color/room_gift_text_shadow"
+                android:shadowDx="2.0"
+                android:shadowDy="2.0"
+                android:shadowRadius="1.0"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="247.0dip"
+            android:layout_height="116.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32.0dip">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/car_two_body"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="0" />
+
+            <RelativeLayout
+                android:id="@id/car_two_light"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@id/car_two_left_light"
+                    android:layout_width="18.0dip"
+                    android:layout_height="16.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="132.0dip"
+                    android:layout_marginTop="46.0dip"
+                    fresco:actualImageScaleType="fitCenter"
+                    fresco:fadeDuration="0" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@id/car_two_right_light"
+                    android:layout_width="16.0dip"
+                    android:layout_height="14.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="221.0dip"
+                    android:layout_marginTop="25.0dip"
+                    fresco:actualImageScaleType="fitCenter"
+                    fresco:fadeDuration="0" />
+            </RelativeLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/car_two_vent_pipe"
+                android:layout_width="72.0dip"
+                android:layout_height="64.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="183.0dip"
+                android:layout_marginTop="58.0dip"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="0" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/car_two_front_wheel"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="-2.0dip"
+                android:layout_marginTop="23.0dip"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="0" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/car_two_back_wheel"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="77.0dip"
+                android:layout_marginTop="49.0dip"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="0" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/car_three"
+        android:layout_width="fill_parent"
+        android:layout_height="170.0dip"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="32.0dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/car_three_redpoint"
+                android:layout_width="12.0dip"
+                android:layout_height="12.0dip"
+                android:layout_gravity="center_vertical"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="0" />
+
+            <TextView
+                android:id="@id/room_gift_car_three_send_person"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:ellipsize="middle"
+                android:gravity="center_vertical"
+                android:shadowColor="@color/room_gift_text_shadow"
+                android:shadowDx="2.0"
+                android:shadowDy="2.0"
+                android:shadowRadius="1.0"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="271.0dip"
+            android:layout_height="138.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32.0dip">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/car_three_back_wheel"
+                android:layout_width="34.0dip"
+                android:layout_height="34.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="-1.0dip"
+                android:layout_marginTop="35.0dip"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="0" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/car_three_body"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="0" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/car_three_light"
+                android:layout_width="36.0dip"
+                android:layout_height="32.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="118.0dip"
+                android:layout_marginTop="9.0dip"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="0" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/car_three_front_wheel"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="90.0dip"
+                android:layout_marginTop="64.0dip"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="0" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/plane_one"
+        android:layout_width="fill_parent"
+        android:layout_height="432.0dip"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="32.0dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/plane_one_redpoint"
+                android:layout_width="12.0dip"
+                android:layout_height="12.0dip"
+                android:layout_gravity="center_vertical"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="0" />
+
+            <TextView
+                android:id="@id/room_gift_plane_one_send_person"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:ellipsize="middle"
+                android:gravity="center_vertical"
+                android:shadowColor="@color/room_gift_text_shadow"
+                android:shadowDx="2.0"
+                android:shadowDy="2.0"
+                android:shadowRadius="1.0"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="280.0dip"
+            android:layout_height="400.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32.0dip">
+
+            <com.meelive.ingkee.ui.view.room.view.FallingAnimationEffect
+                android:id="@id/plane_one_falling_effect"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="110.0dip"
+                android:background="@android:color/transparent" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/plane_shade"
+                android:layout_width="220.0dip"
+                android:layout_height="115.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="35.0dip"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="0" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/plane_one_body"
+                android:layout_width="251.0dip"
+                android:layout_height="120.0dip"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/placeholder_text"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="0" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/plane_ariscrew_right_one"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignLeft="@id/plane_one_body"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="33.0dip"
+                android:layout_marginTop="69.0dip"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="0" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/plane_ariscrew_right_two"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignLeft="@id/plane_one_body"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="55.0dip"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="0" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/plane_ariscrew_left_two"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignLeft="@id/plane_one_body"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="112.0dip"
+                android:layout_marginTop="95.0dip"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="0" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/plane_ariscrew_left_one"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignLeft="@id/plane_one_body"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="78.0dip"
+                android:layout_marginTop="89.0dip"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="0" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/plane_ariscrew_middle"
+                android:layout_width="52.0dip"
+                android:layout_height="52.0dip"
+                android:layout_alignLeft="@id/plane_one_body"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginTop="72.0dip"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="0" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/yacht_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@id/yacht_heart_container"
+            style="@style/gift_full_yacht_heart_container">
+
+            <com.meelive.ingkee.ui.view.room.view.FireworksHeartView
+                android:id="@id/yacht_heart"
+                style="@style/gift_full_yacht_heart_inside_container" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/yacht_heart_arrow"
+                android:layout_width="@dimen/gift_full_heart_arrow_width"
+                android:layout_height="50.0dip"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30.0dip"
+                android:visibility="invisible"
+                fresco:actualImageScaleType="fitXY"
+                fresco:fadeDuration="0"
+                fresco:placeholderImageScaleType="fitXY"
+                fresco:roundAsCircle="false" />
+        </RelativeLayout>
+
+        <com.meelive.ingkee.ui.view.room.view.YachtWaterView
+            android:id="@id/yacht_water_view"
+            android:layout_width="fill_parent"
+            android:layout_height="256.0dip"
+            android:layout_alignParentBottom="true" />
+
+        <RelativeLayout
+            android:id="@id/yacht_hull_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/yacht_water_view"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/gift_yacht_hull_marginbottom"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@id/yacht_ship_hull"
+                android:layout_width="@dimen/gift_yacht_hull_width"
+                android:layout_height="@dimen/gift_yacht_hull_height"
+                android:layout_centerInParent="true">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@id/img_yacht_hull"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10.0dip"
+                    fresco:actualImageScaleType="fitXY"
+                    fresco:fadeDuration="0"
+                    fresco:placeholderImageScaleType="fitXY"
+                    fresco:roundAsCircle="false" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@id/yacht_user_portrait"
+                    android:layout_width="59.0dip"
+                    android:layout_height="59.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="115.0dip"
+                    android:layout_marginTop="20.0dip"
+                    android:background="@drawable/yacht_sender_bg"
+                    android:padding="3.5dip"
+                    fresco:actualImageScaleType="centerInside"
+                    fresco:fadeDuration="0"
+                    fresco:placeholderImage="@drawable/default_head"
+                    fresco:placeholderImageScaleType="centerInside"
+                    fresco:roundAsCircle="true" />
+
+                <TextView
+                    android:id="@id/txt_yacht_sender_name"
+                    style="@style/yacht_sender_name_txt"
+                    android:layout_marginBottom="23.0dip" />
+            </RelativeLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/yacht_hull_shadow"
+                android:layout_width="222.0dip"
+                android:layout_height="79.0dip"
+                android:layout_below="@id/yacht_ship_hull"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20.0dip"
+                fresco:actualImageScaleType="fitXY"
+                fresco:fadeDuration="0"
+                fresco:placeholderImageScaleType="fitXY"
+                fresco:roundAsCircle="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/fireworks_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone">
+
+        <com.meelive.ingkee.ui.view.room.view.FireworksHeartView
+            android:id="@id/fireworks_heart_container"
+            style="@style/gift_full_yacht_heart_container" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="350.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="150.0dip">
+
+            <View
+                android:id="@id/center_point"
+                android:layout_width="1.0dip"
+                android:layout_height="1.0dip"
+                android:layout_centerInParent="true" />
+
+            <View
+                android:id="@id/fireworks_img_fireworks"
+                android:layout_width="196.0dip"
+                android:layout_height="265.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@id/txt_fireworks_sender_name"
+                style="@style/yacht_sender_name_txt"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="60.0dip" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/fireworks_flower1"
+                android:layout_width="175.0dip"
+                android:layout_height="175.0dip"
+                android:layout_marginLeft="-30.0dip"
+                android:layout_marginRight="-7.0dip"
+                android:layout_marginTop="48.0dip"
+                android:layout_toLeftOf="@id/center_point"
+                android:visibility="invisible"
+                fresco:actualImageScaleType="fitXY"
+                fresco:fadeDuration="0"
+                fresco:placeholderImageScaleType="fitXY"
+                fresco:roundAsCircle="false" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/fireworks_flower2"
+                android:layout_width="175.0dip"
+                android:layout_height="175.0dip"
+                android:layout_marginRight="-58.0dip"
+                android:layout_marginTop="77.0dip"
+                android:layout_toLeftOf="@id/center_point"
+                android:visibility="invisible"
+                fresco:actualImageScaleType="fitXY"
+                fresco:fadeDuration="0"
+                fresco:placeholderImageScaleType="fitXY"
+                fresco:roundAsCircle="false" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/fireworks_flower3"
+                android:layout_width="175.0dip"
+                android:layout_height="175.0dip"
+                android:layout_marginLeft="-105.0dip"
+                android:layout_marginTop="15.0dip"
+                android:layout_toRightOf="@id/center_point"
+                android:visibility="invisible"
+                fresco:actualImageScaleType="fitXY"
+                fresco:fadeDuration="0"
+                fresco:placeholderImageScaleType="fitXY"
+                fresco:roundAsCircle="false" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/fireworks_flower4"
+                android:layout_width="175.0dip"
+                android:layout_height="175.0dip"
+                android:layout_marginLeft="-6.0dip"
+                android:layout_marginRight="-30.0dip"
+                android:layout_marginTop="43.0dip"
+                android:layout_toRightOf="@id/center_point"
+                android:visibility="invisible"
+                fresco:actualImageScaleType="fitXY"
+                fresco:fadeDuration="0"
+                fresco:placeholderImageScaleType="fitXY"
+                fresco:roundAsCircle="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

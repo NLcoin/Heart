@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/userhome_head_gift_contributors"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img1" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="12.0dip" fresco:fadeDuration="0" fresco:placeholderImage="@drawable/me_qiuzhan" fresco:placeholderImageScaleType="fitCenter" fresco:roundAsCircle="true" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img2" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="12.0dip" fresco:fadeDuration="0" fresco:placeholderImage="@drawable/me_qiuzhan" fresco:placeholderImageScaleType="fitCenter" fresco:roundAsCircle="true" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img3" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="12.0dip" fresco:fadeDuration="0" fresco:placeholderImage="@drawable/me_qiuzhan" fresco:placeholderImageScaleType="fitCenter" fresco:roundAsCircle="true" />
+    <View style="@style/weight_length_horizontal" />
+    <TextView android:id="@id/txt_contributors_tip" android:text="@string/room_contributor_contributors" style="@style/userhome_head_gift_contributor_tip" />
+    <ImageView android:id="@id/img_right_arrow" android:contentDescription="@string/app_name" style="@style/userhome_head_gift_contributor_rightimage" />
+</LinearLayout>

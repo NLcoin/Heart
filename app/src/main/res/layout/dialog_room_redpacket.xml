@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/redpacket_container"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/redpacket_info_container" android:background="@drawable/bg_room_red_packet_head" android:paddingBottom="80.0dip" style="@style/redpacket_info_container">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/user_portrait" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginTop="60.0dip" fresco:fadeDuration="0" fresco:placeholderImage="@drawable/default_head" fresco:placeholderImageScaleType="fitCenter" fresco:roundAsCircle="true" />
+        <TextView android:textColor="@color/white" android:id="@id/txt_username" android:layout_marginTop="6.0dip" android:text="" style="@style/redpacket_tip_text" />
+        <TextView android:textColor="@color/room_red_packet_tip" android:id="@id/txt_redpacket_tip" android:layout_marginTop="3.0dip" android:text="@string/room_redpacket_tip" style="@style/redpacket_tip_text" />
+    </LinearLayout>
+    <ImageView android:id="@id/img_open" android:visibility="visible" android:src="@drawable/gift_qiang" android:layout_below="@id/redpacket_info_container" android:contentDescription="@string/app_name" style="@style/redpacket_img_open" />
+    <ProgressBar android:id="@id/progress_loading" android:visibility="gone" android:layout_below="@id/redpacket_info_container" style="@style/redpacket_loading" />
+    <LinearLayout style="@style/redpacket_close_container">
+        <ImageView android:id="@id/img_close" android:contentDescription="@string/app_name" style="@style/redpacket_close_img" />
+    </LinearLayout>
+</RelativeLayout>

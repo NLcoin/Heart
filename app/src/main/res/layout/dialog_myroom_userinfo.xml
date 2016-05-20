@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/click_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/root_view" android:background="@drawable/bg_room_userinfodialog" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="@dimen/room_userinfo_width" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@id/title_container" android:paddingLeft="@dimen/room_userdialog_leftpadding" android:paddingRight="@dimen/room_userdialog_leftpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-5.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/theme_main_2" android:id="@id/img_report" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/room_roomuser_manage" android:layout_alignTop="@id/img_close" android:layout_alignBottom="@id/img_close" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_close" android:layout_width="@dimen/room_userinfo_report_height" android:layout_height="@dimen/room_userinfo_report_height" android:layout_alignParentRight="true" fresco:fadeDuration="0" fresco:placeholderImage="@drawable/room_pop_up_shut" fresco:placeholderImageScaleType="fitXY" fresco:roundAsCircle="false" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/user_portrait_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_container" android:layout_centerHorizontal="true">
+            <LinearLayout android:gravity="center" android:id="@id/user_portrait_layout" android:background="@drawable/control_circle_bg" android:layout_width="97.0dip" android:layout_height="97.0dip" android:layout_centerHorizontal="true">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/user_portrait" android:layout_width="85.0dip" android:layout_height="85.0dip" fresco:fadeDuration="0" fresco:placeholderImage="@drawable/default_head" fresco:placeholderImageScaleType="fitCenter" fresco:roundAsCircle="true" />
+            </LinearLayout>
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_user_type" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:layout_alignRight="@id/user_portrait_layout" android:layout_alignBottom="@id/user_portrait_layout" fresco:fadeDuration="0" />
+            <LinearLayout android:gravity="center" android:id="@id/mvp_layout" android:background="@drawable/control_circle_bg" android:visibility="invisible" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginTop="77.0dip" android:layout_marginRight="117.0dip" android:layout_alignTop="@id/user_portrait_layout" android:layout_alignRight="@id/user_portrait_layout">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/mvp_portrait" android:layout_width="36.0dip" android:layout_height="36.0dip" fresco:fadeDuration="0" fresco:placeholderImage="@drawable/default_head" fresco:placeholderImageScaleType="fitCenter" fresco:roundAsCircle="true" />
+            </LinearLayout>
+            <View android:id="@id/circle_to_mvp" android:background="@drawable/control_circle_bg" android:visibility="invisible" android:layout_width="11.0dip" android:layout_height="11.0dip" android:layout_marginTop="76.0dip" android:layout_marginRight="103.0dip" android:layout_alignTop="@id/user_portrait_layout" android:layout_alignRight="@id/user_portrait_layout" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/uesrname_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/room_user_name_margintop" android:layout_below="@id/user_portrait_container" android:layout_centerHorizontal="true">
+            <TextView android:textSize="18.0sp" android:textColor="@color/room_userinfo_nick" android:ellipsize="end" android:gravity="center" android:id="@id/txt_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="160.0dip" android:text="加菲猫" android:singleLine="true" />
+            <ImageView android:id="@id/img_gender" android:layout_width="18.0sp" android:layout_height="18.0sp" android:layout_marginLeft="5.0sp" android:src="@drawable/global_female" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+            <ImageView android:id="@id/img_level" android:layout_width="39.0sp" android:layout_height="18.0sp" android:layout_marginLeft="5.0dip" android:src="@drawable/rank_1" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/info_container" android:paddingLeft="@dimen/room_userdialog_leftpadding" android:paddingRight="@dimen/room_userdialog_leftpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/uesrname_container">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/location_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/cell_userlist_tip" android:gravity="center_vertical" android:id="@id/txt_location" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Beijing" />
+                <ImageView android:id="@id/img_location" android:layout_width="10.0sp" android:layout_height="13.0sp" android:layout_marginLeft="1.0dip" android:src="@drawable/room_pop_up_location" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="@color/room_userinfo_nick" android:layout_gravity="center_horizontal" android:id="@id/txt_verify_reason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:text="微博认证：骚男，产品经理" />
+            <TextView android:id="@id/txt_desc" android:text="超级MeeLive产品经理" style="@style/room_userinfo_dialog_userdesc" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/account_inout_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/dm_red" android:id="@id/txt_account_inout" android:paddingRight="3.0dip" android:text="@string/userhome_account_inout" style="@style/room_userinfo_dialog_userdesc" />
+                <ImageView android:id="@id/img_balance_icon" android:layout_width="15.0sp" android:layout_height="11.0sp" android:contentDescription="@string/app_name" style="@style/charinfor_balance_img" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/friends_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/info_container">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/relative_container" android:paddingLeft="@dimen/room_userdialog_relative_paddingleft" android:paddingRight="@dimen/room_userdialog_relative_paddingleft" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_centerHorizontal="true">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/btn_follows" style="@style/weight_length_horizontal">
+                    <TextView android:id="@id/txt_follows" android:text="0" style="@style/text_room_userinfo_fans" />
+                    <TextView android:text="@string/userhome_followers_prefix" style="@style/text_room_userinfo_fans" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/btn_fans" style="@style/weight_length_horizontal">
+                    <TextView android:id="@id/txt_fans" android:text="0" style="@style/text_room_userinfo_fans" />
+                    <TextView android:text="@string/userhome_fans_prefix" style="@style/text_room_userinfo_fans" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/btn_contributors" style="@style/weight_length_horizontal">
+                    <TextView android:id="@id/txt_contributors" android:text="0" style="@style/text_room_userinfo_fans" />
+                    <TextView android:text="@string/userhome_account_goldcoin" style="@style/text_room_userinfo_fans" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/relative_container">
+                <View android:background="@drawable/room_userinfo_divider" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginLeft="-1.0dip" android:layout_marginTop="-1.0dip" android:layout_marginRight="-1.0dip" android:layout_below="@id/pointers" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/pointers" android:paddingLeft="@dimen/room_userdialog_relative_paddingleft" android:paddingRight="@dimen/room_userdialog_relative_paddingleft" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" style="@style/weight_length_horizontal">
+                        <ImageView android:id="@id/img_follows_pointer" android:layout_width="16.0dip" android:layout_height="8.5dip" android:src="@drawable/room_pop_up_triangle" android:contentDescription="@string/app_name" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" style="@style/weight_length_horizontal">
+                        <ImageView android:id="@id/img_fans_pointer" android:visibility="invisible" android:layout_width="16.0dip" android:layout_height="8.5dip" android:src="@drawable/room_pop_up_triangle" android:contentDescription="@string/app_name" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" style="@style/weight_length_horizontal">
+                        <ImageView android:id="@id/img_contributors_pointer" android:visibility="invisible" android:layout_width="16.0dip" android:layout_height="8.5dip" android:src="@drawable/room_pop_up_triangle" android:contentDescription="@string/app_name" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/oper_container" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_below="@id/relative_container" android:layout_centerHorizontal="true">
+                <Button android:id="@id/btn_follow" android:text="@string/userhome_add_attention" style="@style/btn_room_follow" />
+                <View android:id="@id/space_private_chat" android:layout_width="@dimen/room_userinfo_opercontainer_space" android:layout_height="1.0dip" />
+                <Button android:id="@id/btn_private_chat" android:text="@string/userhome_private_chat" style="@style/btn_room_follow" />
+                <View android:id="@id/space_reply" android:layout_width="@dimen/room_userinfo_opercontainer_space" android:layout_height="1.0dip" />
+                <Button android:id="@id/btn_reply" android:text="@string/userhome_room_reply" style="@style/btn_room_follow" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

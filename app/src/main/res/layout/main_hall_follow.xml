@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_hall_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@id/list_emptyview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/image_loadfailure_width"
+                android:layout_height="@dimen/image_loadfailure_height"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_video" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/cell_layout_padding"
+                android:paddingRight="@dimen/cell_layout_padding"
+                android:text="@string/userhome_hall_nocontent_tip"
+                android:textColor="@color/hall_nocontent_tip"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <com.meelive.ingkee.ui.widget.refreshlistview.PullToRefreshListView
+            android:id="@id/listview"
+            style="@style/listview_base"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:divider="@color/transparent_color" />
+    </RelativeLayout>
+</LinearLayout>

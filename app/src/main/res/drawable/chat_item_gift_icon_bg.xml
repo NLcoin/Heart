@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/chat_item_gift_icon_bg" />
+    <stroke android:width="@dimen/global_line_height" android:color="@color/chat_item_gift_icon_border" />
+    <corners android:radius="@dimen/chat_item_gift_icon_corner" />
+</shape>
